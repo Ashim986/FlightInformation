@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C59090511F8C3C4B00C2CDD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59090501F8C3C4B00C2CDD8 /* AppDelegate.swift */; };
+		C59090531F8C3C4B00C2CDD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59090521F8C3C4B00C2CDD8 /* ViewController.swift */; };
+		C59090561F8C3C4B00C2CDD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C59090541F8C3C4B00C2CDD8 /* Main.storyboard */; };
+		C59090591F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C59090571F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline.xcdatamodeld */; };
+		C590905B1F8C3C4B00C2CDD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C590905A1F8C3C4B00C2CDD8 /* Assets.xcassets */; };
+		C590905E1F8C3C4B00C2CDD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C590905C1F8C3C4B00C2CDD8 /* LaunchScreen.storyboard */; };
+		C59090691F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59090681F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineTests.swift */; };
+		C59090741F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59090731F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C59090651F8C3C4B00C2CDD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C59090451F8C3C4B00C2CDD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C590904C1F8C3C4B00C2CDD8;
+			remoteInfo = ForcastFlightForAlaskaAirline;
+		};
+		C59090701F8C3C4B00C2CDD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C59090451F8C3C4B00C2CDD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C590904C1F8C3C4B00C2CDD8;
+			remoteInfo = ForcastFlightForAlaskaAirline;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C590904D1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForcastFlightForAlaskaAirline.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C59090501F8C3C4B00C2CDD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C59090521F8C3C4B00C2CDD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C59090551F8C3C4B00C2CDD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C59090581F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ForcastFlightForAlaskaAirline.xcdatamodel; sourceTree = "<group>"; };
+		C590905A1F8C3C4B00C2CDD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C590905D1F8C3C4B00C2CDD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C590905F1F8C3C4B00C2CDD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C59090641F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForcastFlightForAlaskaAirlineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C59090681F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcastFlightForAlaskaAirlineTests.swift; sourceTree = "<group>"; };
+		C590906A1F8C3C4B00C2CDD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C590906F1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForcastFlightForAlaskaAirlineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C59090731F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcastFlightForAlaskaAirlineUITests.swift; sourceTree = "<group>"; };
+		C59090751F8C3C4C00C2CDD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C590904A1F8C3C4B00C2CDD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C59090611F8C3C4B00C2CDD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C590906C1F8C3C4B00C2CDD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C59090441F8C3C4B00C2CDD8 = {
+			isa = PBXGroup;
+			children = (
+				C590904F1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline */,
+				C59090671F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineTests */,
+				C59090721F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineUITests */,
+				C590904E1F8C3C4B00C2CDD8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C590904E1F8C3C4B00C2CDD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C590904D1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline.app */,
+				C59090641F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineTests.xctest */,
+				C590906F1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C590904F1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline */ = {
+			isa = PBXGroup;
+			children = (
+				C59090501F8C3C4B00C2CDD8 /* AppDelegate.swift */,
+				C59090521F8C3C4B00C2CDD8 /* ViewController.swift */,
+				C59090541F8C3C4B00C2CDD8 /* Main.storyboard */,
+				C590905A1F8C3C4B00C2CDD8 /* Assets.xcassets */,
+				C590905C1F8C3C4B00C2CDD8 /* LaunchScreen.storyboard */,
+				C590905F1F8C3C4B00C2CDD8 /* Info.plist */,
+				C59090571F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline.xcdatamodeld */,
+			);
+			path = ForcastFlightForAlaskaAirline;
+			sourceTree = "<group>";
+		};
+		C59090671F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineTests */ = {
+			isa = PBXGroup;
+			children = (
+				C59090681F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineTests.swift */,
+				C590906A1F8C3C4B00C2CDD8 /* Info.plist */,
+			);
+			path = ForcastFlightForAlaskaAirlineTests;
+			sourceTree = "<group>";
+		};
+		C59090721F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C59090731F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineUITests.swift */,
+				C59090751F8C3C4C00C2CDD8 /* Info.plist */,
+			);
+			path = ForcastFlightForAlaskaAirlineUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C590904C1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C59090781F8C3C4C00C2CDD8 /* Build configuration list for PBXNativeTarget "ForcastFlightForAlaskaAirline" */;
+			buildPhases = (
+				C59090491F8C3C4B00C2CDD8 /* Sources */,
+				C590904A1F8C3C4B00C2CDD8 /* Frameworks */,
+				C590904B1F8C3C4B00C2CDD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ForcastFlightForAlaskaAirline;
+			productName = ForcastFlightForAlaskaAirline;
+			productReference = C590904D1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C59090631F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C590907B1F8C3C4C00C2CDD8 /* Build configuration list for PBXNativeTarget "ForcastFlightForAlaskaAirlineTests" */;
+			buildPhases = (
+				C59090601F8C3C4B00C2CDD8 /* Sources */,
+				C59090611F8C3C4B00C2CDD8 /* Frameworks */,
+				C59090621F8C3C4B00C2CDD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C59090661F8C3C4B00C2CDD8 /* PBXTargetDependency */,
+			);
+			name = ForcastFlightForAlaskaAirlineTests;
+			productName = ForcastFlightForAlaskaAirlineTests;
+			productReference = C59090641F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C590906E1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C590907E1F8C3C4C00C2CDD8 /* Build configuration list for PBXNativeTarget "ForcastFlightForAlaskaAirlineUITests" */;
+			buildPhases = (
+				C590906B1F8C3C4B00C2CDD8 /* Sources */,
+				C590906C1F8C3C4B00C2CDD8 /* Frameworks */,
+				C590906D1F8C3C4B00C2CDD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C59090711F8C3C4B00C2CDD8 /* PBXTargetDependency */,
+			);
+			name = ForcastFlightForAlaskaAirlineUITests;
+			productName = ForcastFlightForAlaskaAirlineUITests;
+			productReference = C590906F1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C59090451F8C3C4B00C2CDD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "ashim Dahal";
+				TargetAttributes = {
+					C590904C1F8C3C4B00C2CDD8 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					C59090631F8C3C4B00C2CDD8 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C590904C1F8C3C4B00C2CDD8;
+					};
+					C590906E1F8C3C4B00C2CDD8 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C590904C1F8C3C4B00C2CDD8;
+					};
+				};
+			};
+			buildConfigurationList = C59090481F8C3C4B00C2CDD8 /* Build configuration list for PBXProject "ForcastFlightForAlaskaAirline" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C59090441F8C3C4B00C2CDD8;
+			productRefGroup = C590904E1F8C3C4B00C2CDD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C590904C1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline */,
+				C59090631F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineTests */,
+				C590906E1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C590904B1F8C3C4B00C2CDD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C590905E1F8C3C4B00C2CDD8 /* LaunchScreen.storyboard in Resources */,
+				C590905B1F8C3C4B00C2CDD8 /* Assets.xcassets in Resources */,
+				C59090561F8C3C4B00C2CDD8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C59090621F8C3C4B00C2CDD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C590906D1F8C3C4B00C2CDD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C59090491F8C3C4B00C2CDD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C59090591F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline.xcdatamodeld in Sources */,
+				C59090531F8C3C4B00C2CDD8 /* ViewController.swift in Sources */,
+				C59090511F8C3C4B00C2CDD8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C59090601F8C3C4B00C2CDD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C59090691F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C590906B1F8C3C4B00C2CDD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C59090741F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C59090661F8C3C4B00C2CDD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C590904C1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline */;
+			targetProxy = C59090651F8C3C4B00C2CDD8 /* PBXContainerItemProxy */;
+		};
+		C59090711F8C3C4B00C2CDD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C590904C1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline */;
+			targetProxy = C59090701F8C3C4B00C2CDD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C59090541F8C3C4B00C2CDD8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C59090551F8C3C4B00C2CDD8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C590905C1F8C3C4B00C2CDD8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C590905D1F8C3C4B00C2CDD8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C59090761F8C3C4C00C2CDD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C59090771F8C3C4C00C2CDD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C59090791F8C3C4C00C2CDD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ForcastFlightForAlaskaAirline/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ashim.ForcastFlightForAlaskaAirline;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C590907A1F8C3C4C00C2CDD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ForcastFlightForAlaskaAirline/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ashim.ForcastFlightForAlaskaAirline;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C590907C1F8C3C4C00C2CDD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ForcastFlightForAlaskaAirlineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ashim.ForcastFlightForAlaskaAirlineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ForcastFlightForAlaskaAirline.app/ForcastFlightForAlaskaAirline";
+			};
+			name = Debug;
+		};
+		C590907D1F8C3C4C00C2CDD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ForcastFlightForAlaskaAirlineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ashim.ForcastFlightForAlaskaAirlineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ForcastFlightForAlaskaAirline.app/ForcastFlightForAlaskaAirline";
+			};
+			name = Release;
+		};
+		C590907F1F8C3C4C00C2CDD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ForcastFlightForAlaskaAirlineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ashim.ForcastFlightForAlaskaAirlineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ForcastFlightForAlaskaAirline;
+			};
+			name = Debug;
+		};
+		C59090801F8C3C4C00C2CDD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ForcastFlightForAlaskaAirlineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ashim.ForcastFlightForAlaskaAirlineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ForcastFlightForAlaskaAirline;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C59090481F8C3C4B00C2CDD8 /* Build configuration list for PBXProject "ForcastFlightForAlaskaAirline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C59090761F8C3C4C00C2CDD8 /* Debug */,
+				C59090771F8C3C4C00C2CDD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C59090781F8C3C4C00C2CDD8 /* Build configuration list for PBXNativeTarget "ForcastFlightForAlaskaAirline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C59090791F8C3C4C00C2CDD8 /* Debug */,
+				C590907A1F8C3C4C00C2CDD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C590907B1F8C3C4C00C2CDD8 /* Build configuration list for PBXNativeTarget "ForcastFlightForAlaskaAirlineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C590907C1F8C3C4C00C2CDD8 /* Debug */,
+				C590907D1F8C3C4C00C2CDD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C590907E1F8C3C4C00C2CDD8 /* Build configuration list for PBXNativeTarget "ForcastFlightForAlaskaAirlineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C590907F1F8C3C4C00C2CDD8 /* Debug */,
+				C59090801F8C3C4C00C2CDD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C59090571F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C59090581F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline.xcdatamodel */,
+			);
+			currentVersion = C59090581F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline.xcdatamodel */;
+			path = ForcastFlightForAlaskaAirline.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C59090451F8C3C4B00C2CDD8 /* Project object */;
+}
