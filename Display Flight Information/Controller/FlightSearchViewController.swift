@@ -41,7 +41,7 @@ class FlightSearchViewController: UIViewController {
         return textField
     }()
     
-    let searchButton : UIButton = {
+    lazy var searchButton : UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Search", for: .normal)
         button.setTitleColor(.white, for: .normal)
@@ -51,6 +51,7 @@ class FlightSearchViewController: UIViewController {
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.gray.cgColor
         button.backgroundColor = #colorLiteral(red: 0.4170642594, green: 0.8991251538, blue: 0.35213355, alpha: 0.7429901541)
+        button.addTarget(self, action: #selector(handelSearchButton), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -63,8 +64,6 @@ class FlightSearchViewController: UIViewController {
         view.addSubview(informationLabel)
         view.addSubview(textFieldForAirportCode)
         view.addSubview(searchButton)
-        let airportName = textFieldForAirportCode.text ?? "SFO"
-        loadDataFromService(destination: airportName)
         anchroForView()
     }
     
@@ -98,6 +97,17 @@ class FlightSearchViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @objc func handelSearchButton(){
+    
+        if let destinationCity = textFieldForAirportCode.text {
+        
+            loadDataFromService(destination: destinationCity)
+            
+            let flightInformationList = UINavigationController(rootViewController: FlightInformationList())
+            present(flightInformationList, animated: true, completion: nil)
+        }
+        
+    }
     
     func loadDataFromService (destination: String)  {
         

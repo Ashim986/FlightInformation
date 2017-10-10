@@ -10,6 +10,7 @@ import UIKit
 
 class  FlightDisplayCell: UITableViewCell {
     
+    
     override func layoutSubviews() {
         
         super.layoutSubviews()
@@ -18,4 +19,6 @@ class  FlightDisplayCell: UITableViewCell {
         detailTextLabel?.frame = CGRect(x: 64, y: (detailTextLabel?.frame.origin.y)! + 2, width: frame.width, height: (detailTextLabel?.frame.height)!)
         
     }
+    
+    
 }

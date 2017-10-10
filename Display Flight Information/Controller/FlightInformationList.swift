@@ -17,6 +17,8 @@ class FlightInformationList: UITableViewController {
         super.viewDidLoad()
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(handleBackButton))
+        
+        tableView.register(FlightDisplayCell.self, forCellReuseIdentifier: cellID)
     }
     
     @objc func handleBackButton(){
@@ -24,20 +26,16 @@ class FlightInformationList: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return flightInformationDetail.count
+        return 1
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 64
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        
+    
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as? FlightDisplayCell
-        let flightData = flightInformationDetail[indexPath.row]
-        cell?.textLabel?.text = flightData.Dest
-        cell?.detailTextLabel?.text = flightData.EstArrTime
-        
+        cell?.textLabel?.text = "Ashim"
         return cell!
     }
     
