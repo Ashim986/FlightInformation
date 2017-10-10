@@ -102,7 +102,6 @@ class FlightSearchViewController: UIViewController {
         if let destinationCity = textFieldForAirportCode.text {
         
             loadDataFromService(destination: destinationCity)
-            
             let flightInformationList = UINavigationController(rootViewController: FlightInformationList())
             present(flightInformationList, animated: true, completion: nil)
         }

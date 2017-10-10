@@ -17,7 +17,7 @@ class FlightInformationList: UITableViewController {
         super.viewDidLoad()
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(handleBackButton))
-        
+        navigationItem.title = "Flight Information Detail"
         tableView.register(FlightDisplayCell.self, forCellReuseIdentifier: cellID)
     }
     
@@ -35,7 +35,8 @@ class FlightInformationList: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as? FlightDisplayCell
-        cell?.textLabel?.text = "Ashim"
+//        cell?.textLabel?.text = "Ashim"
+//        cell?.detailTextLabel?.text = "This is new requirement"
         return cell!
     }
     
