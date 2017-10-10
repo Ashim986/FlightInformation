@@ -39,5 +39,12 @@ class FlightInformationList: UITableViewController {
 //        cell?.detailTextLabel?.text = "This is new requirement"
         return cell!
     }
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = displayHeaderList()
+        return headerView
+    }
     
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 30
+    }
 }

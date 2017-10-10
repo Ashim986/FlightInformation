@@ -8,7 +8,11 @@
 
 import UIKit
 
-extension FlightInformationList()-> UIView (){
+extension FlightInformationList{
+    
+    func displayHeaderList() -> UIView{
+        
+  
     let serialNumberLabel : UILabel = {
             let label =  UILabel()
             label.text = "S/N"
@@ -101,25 +105,27 @@ extension FlightInformationList()-> UIView (){
     let destinationView = UIView()
     let scheduleArrivalTimeView = UIView()
     let estimatedArrivalTime = UIView()
+        
+
     
     let displayInformationLabelStackView = UIStackView(arrangedSubviews: [serialNumberView, flightIDView, originView, destinationView,scheduleArrivalTimeView, estimatedArrivalTime])
     displayInformationLabelStackView.axis = .horizontal
     displayInformationLabelStackView.distribution = .fillEqually
     displayInformationLabelStackView.translatesAutoresizingMaskIntoConstraints = false
+     
+        view.addSubview(displayInformationLabelStackView)
+        view.addSubview(serialNumberLabel)
+        view.addSubview(flightIDLabel)
+        view.addSubview(originLabel)
+        view.addSubview(destinationLabel)
+        view.addSubview(scheduleArrivalTimeLabel)
+        view.addSubview(estimatedArrivalTimeLabel)
     
-    
-    displayInformationLabelStackView.addSubview(serialNumberLabel)
-    displayInformationLabelStackView.addSubview(flightIDLabel)
-    displayInformationLabelStackView.addSubview(originLabel)
-    displayInformationLabelStackView.addSubview(destinationLabel)
-    displayInformationLabelStackView.addSubview(scheduleArrivalTimeLabel)
-    displayInformationLabelStackView.addSubview(estimatedArrivalTimeLabel)
     // Anchor For Stack Views and Label
     // x,y, height and width
-    NSLayoutConstraint.activate([displayInformationLabelStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0), displayInformationLabelStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 8),displayInformationLabelStackView.widthAnchor.constraint(equalTo :view.widthAnchor), displayInformationLabelStackView.heightAnchor.constraint(equalToConstant: 30)])
-    
-    
-    // label Anchor
+
+NSLayoutConstraint.activate([displayInformationLabelStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0), displayInformationLabelStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 8),displayInformationLabelStackView.widthAnchor.constraint(equalTo :view.widthAnchor), displayInformationLabelStackView.heightAnchor.constraint(equalToConstant: 30)])
+        
     
     NSLayoutConstraint.activate([serialNumberLabel.leadingAnchor.constraint(equalTo: serialNumberView.leadingAnchor, constant : 2), serialNumberLabel.trailingAnchor.constraint(equalTo: serialNumberView.trailingAnchor, constant : -2),serialNumberLabel.widthAnchor.constraint(equalTo :serialNumberView.widthAnchor), serialNumberLabel.heightAnchor.constraint(equalTo: serialNumberView.heightAnchor)])
     
@@ -134,7 +140,7 @@ extension FlightInformationList()-> UIView (){
     NSLayoutConstraint.activate([estimatedArrivalTimeLabel.leadingAnchor.constraint(equalTo: estimatedArrivalTime.leadingAnchor, constant : 2), estimatedArrivalTimeLabel.trailingAnchor.constraint(equalTo: estimatedArrivalTime.trailingAnchor, constant : -2),estimatedArrivalTimeLabel.widthAnchor.constraint(equalTo :estimatedArrivalTime.widthAnchor), estimatedArrivalTimeLabel.heightAnchor.constraint(equalTo: estimatedArrivalTime.heightAnchor)])
    
     
-    return displayInformationLabelStackView
+    return displayInformationLabelStackView as UIView
     
-
+    }
 }
