@@ -119,22 +119,22 @@ extension FlightInformationList{
     view.addSubview(displayInformationLabelStackView)
     // Anchor For Stack Views and Label
     // x,y, height and width
-    NSLayoutConstraint.activate([displayInformationLabelStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0), displayInformationLabelStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 8),displayInformationLabelStackView.widthAnchor.constraint(equalTo :view.widthAnchor), displayInformationLabelStackView.heightAnchor.constraint(equalToConstant: 30)])
+    NSLayoutConstraint.activate([displayInformationLabelStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor), displayInformationLabelStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor ),displayInformationLabelStackView.widthAnchor.constraint(equalTo :view.widthAnchor), displayInformationLabelStackView.heightAnchor.constraint(equalToConstant: 30)])
     
     
     // label Anchor
     
-    NSLayoutConstraint.activate([serialNumberLabel.leadingAnchor.constraint(equalTo: serialNumberView.leadingAnchor, constant : 2), serialNumberLabel.trailingAnchor.constraint(equalTo: serialNumberView.trailingAnchor, constant : -2),serialNumberLabel.widthAnchor.constraint(equalTo :serialNumberView.widthAnchor), serialNumberLabel.heightAnchor.constraint(equalTo: serialNumberView.heightAnchor)])
+    NSLayoutConstraint.activate([serialNumberLabel.leadingAnchor.constraint(equalTo: serialNumberView.leadingAnchor), serialNumberLabel.trailingAnchor.constraint(equalTo: serialNumberView.trailingAnchor),serialNumberLabel.widthAnchor.constraint(equalTo :serialNumberView.widthAnchor), serialNumberLabel.heightAnchor.constraint(equalTo: serialNumberView.heightAnchor)])
     
-    NSLayoutConstraint.activate([flightIDLabel.leadingAnchor.constraint(equalTo: flightIDView.leadingAnchor, constant : 2), flightIDLabel.trailingAnchor.constraint(equalTo: flightIDView.trailingAnchor, constant : -2),flightIDLabel.widthAnchor.constraint(equalTo :flightIDView.widthAnchor), flightIDLabel.heightAnchor.constraint(equalTo: flightIDView.heightAnchor)])
+    NSLayoutConstraint.activate([flightIDLabel.leadingAnchor.constraint(equalTo: flightIDView.leadingAnchor), flightIDLabel.trailingAnchor.constraint(equalTo: flightIDView.trailingAnchor),flightIDLabel.widthAnchor.constraint(equalTo :flightIDView.widthAnchor), flightIDLabel.heightAnchor.constraint(equalTo: flightIDView.heightAnchor)])
     
-    NSLayoutConstraint.activate([originLabel.leadingAnchor.constraint(equalTo: originView.leadingAnchor, constant : 2), originLabel.trailingAnchor.constraint(equalTo: originView.trailingAnchor, constant : -2),originLabel.widthAnchor.constraint(equalTo :originView.widthAnchor), originLabel.heightAnchor.constraint(equalTo: originView.heightAnchor)])
+    NSLayoutConstraint.activate([originLabel.leadingAnchor.constraint(equalTo: originView.leadingAnchor), originLabel.trailingAnchor.constraint(equalTo: originView.trailingAnchor),originLabel.widthAnchor.constraint(equalTo :originView.widthAnchor), originLabel.heightAnchor.constraint(equalTo: originView.heightAnchor)])
     
-    NSLayoutConstraint.activate([destinationLabel.leadingAnchor.constraint(equalTo: destinationView.leadingAnchor,constant : 2), destinationLabel.trailingAnchor.constraint(equalTo: destinationView.trailingAnchor, constant : -2),destinationLabel.widthAnchor.constraint(equalTo :destinationView.widthAnchor), destinationLabel.heightAnchor.constraint(equalTo: destinationView.heightAnchor)])
+    NSLayoutConstraint.activate([destinationLabel.leadingAnchor.constraint(equalTo: destinationView.leadingAnchor), destinationLabel.trailingAnchor.constraint(equalTo: destinationView.trailingAnchor),destinationLabel.widthAnchor.constraint(equalTo :destinationView.widthAnchor), destinationLabel.heightAnchor.constraint(equalTo: destinationView.heightAnchor)])
     
-    NSLayoutConstraint.activate([scheduleArrivalTimeLabel.leadingAnchor.constraint(equalTo: scheduleArrivalTimeView.leadingAnchor, constant : 2), scheduleArrivalTimeLabel.trailingAnchor.constraint(equalTo: scheduleArrivalTimeView.trailingAnchor, constant : -2),scheduleArrivalTimeLabel.widthAnchor.constraint(equalTo :scheduleArrivalTimeView.widthAnchor), scheduleArrivalTimeLabel.heightAnchor.constraint(equalTo: scheduleArrivalTimeView.heightAnchor)])
+    NSLayoutConstraint.activate([scheduleArrivalTimeLabel.leadingAnchor.constraint(equalTo: scheduleArrivalTimeView.leadingAnchor), scheduleArrivalTimeLabel.trailingAnchor.constraint(equalTo: scheduleArrivalTimeView.trailingAnchor),scheduleArrivalTimeLabel.widthAnchor.constraint(equalTo :scheduleArrivalTimeView.widthAnchor), scheduleArrivalTimeLabel.heightAnchor.constraint(equalTo: scheduleArrivalTimeView.heightAnchor)])
     
-    NSLayoutConstraint.activate([estimatedArrivalTimeLabel.leadingAnchor.constraint(equalTo: estimatedArrivalTime.leadingAnchor, constant : 2), estimatedArrivalTimeLabel.trailingAnchor.constraint(equalTo: estimatedArrivalTime.trailingAnchor, constant : -2),estimatedArrivalTimeLabel.widthAnchor.constraint(equalTo :estimatedArrivalTime.widthAnchor), estimatedArrivalTimeLabel.heightAnchor.constraint(equalTo: estimatedArrivalTime.heightAnchor)])
+    NSLayoutConstraint.activate([estimatedArrivalTimeLabel.leadingAnchor.constraint(equalTo: estimatedArrivalTime.leadingAnchor), estimatedArrivalTimeLabel.trailingAnchor.constraint(equalTo: estimatedArrivalTime.trailingAnchor),estimatedArrivalTimeLabel.widthAnchor.constraint(equalTo :estimatedArrivalTime.widthAnchor), estimatedArrivalTimeLabel.heightAnchor.constraint(equalTo: estimatedArrivalTime.heightAnchor)])
    
     
     return displayInformationLabelStackView 
