@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C56DCC2F1F8C703C0089BA97 /* FlightDataInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56DCC2E1F8C703C0089BA97 /* FlightDataInformation.swift */; };
+		C56DCC351F8C7FA40089BA97 /* FlightDisplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56DCC341F8C7FA40089BA97 /* FlightDisplayCell.swift */; };
+		C56DCC371F8C7FCE0089BA97 /* FlightInformationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56DCC361F8C7FCE0089BA97 /* FlightInformationList.swift */; };
 		C59090511F8C3C4B00C2CDD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59090501F8C3C4B00C2CDD8 /* AppDelegate.swift */; };
-		C59090531F8C3C4B00C2CDD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59090521F8C3C4B00C2CDD8 /* ViewController.swift */; };
+		C59090531F8C3C4B00C2CDD8 /* FlightSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59090521F8C3C4B00C2CDD8 /* FlightSearchViewController.swift */; };
 		C59090561F8C3C4B00C2CDD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C59090541F8C3C4B00C2CDD8 /* Main.storyboard */; };
 		C59090591F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C59090571F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline.xcdatamodeld */; };
 		C590905B1F8C3C4B00C2CDD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C590905A1F8C3C4B00C2CDD8 /* Assets.xcassets */; };
@@ -35,18 +38,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C590904D1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForcastFlightForAlaskaAirline.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C56DCC2E1F8C703C0089BA97 /* FlightDataInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDataInformation.swift; sourceTree = "<group>"; };
+		C56DCC341F8C7FA40089BA97 /* FlightDisplayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDisplayCell.swift; sourceTree = "<group>"; };
+		C56DCC361F8C7FCE0089BA97 /* FlightInformationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInformationList.swift; sourceTree = "<group>"; };
+		C590904D1F8C3C4B00C2CDD8 /* DisplayFlightInformation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisplayFlightInformation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59090501F8C3C4B00C2CDD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C59090521F8C3C4B00C2CDD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C59090521F8C3C4B00C2CDD8 /* FlightSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchViewController.swift; sourceTree = "<group>"; };
 		C59090551F8C3C4B00C2CDD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C59090581F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ForcastFlightForAlaskaAirline.xcdatamodel; sourceTree = "<group>"; };
 		C590905A1F8C3C4B00C2CDD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C590905D1F8C3C4B00C2CDD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C590905F1F8C3C4B00C2CDD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C59090641F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForcastFlightForAlaskaAirlineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C59090641F8C3C4B00C2CDD8 /* DisplayFlightInformationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisplayFlightInformationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59090681F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcastFlightForAlaskaAirlineTests.swift; sourceTree = "<group>"; };
 		C590906A1F8C3C4B00C2CDD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C590906F1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForcastFlightForAlaskaAirlineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C590906F1F8C3C4B00C2CDD8 /* DisplayFlightInformationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisplayFlightInformationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59090731F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcastFlightForAlaskaAirlineUITests.swift; sourceTree = "<group>"; };
 		C59090751F8C3C4C00C2CDD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,10 +82,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C56DCC301F8C7F5C0089BA97 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C56DCC311F8C7F690089BA97 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C59090521F8C3C4B00C2CDD8 /* FlightSearchViewController.swift */,
+				C56DCC361F8C7FCE0089BA97 /* FlightInformationList.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C56DCC321F8C7F720089BA97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C56DCC341F8C7FA40089BA97 /* FlightDisplayCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C56DCC331F8C7F790089BA97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C56DCC2E1F8C703C0089BA97 /* FlightDataInformation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C59090441F8C3C4B00C2CDD8 = {
 			isa = PBXGroup;
 			children = (
-				C590904F1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline */,
+				C590904F1F8C3C4B00C2CDD8 /* Display Flight Information */,
 				C59090671F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineTests */,
 				C59090721F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineUITests */,
 				C590904E1F8C3C4B00C2CDD8 /* Products */,
@@ -89,25 +127,28 @@
 		C590904E1F8C3C4B00C2CDD8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C590904D1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline.app */,
-				C59090641F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineTests.xctest */,
-				C590906F1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineUITests.xctest */,
+				C590904D1F8C3C4B00C2CDD8 /* DisplayFlightInformation.app */,
+				C59090641F8C3C4B00C2CDD8 /* DisplayFlightInformationTests.xctest */,
+				C590906F1F8C3C4B00C2CDD8 /* DisplayFlightInformationUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C590904F1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline */ = {
+		C590904F1F8C3C4B00C2CDD8 /* Display Flight Information */ = {
 			isa = PBXGroup;
 			children = (
+				C56DCC331F8C7F790089BA97 /* Model */,
+				C56DCC321F8C7F720089BA97 /* View */,
+				C56DCC311F8C7F690089BA97 /* Controller */,
+				C56DCC301F8C7F5C0089BA97 /* Service */,
 				C59090501F8C3C4B00C2CDD8 /* AppDelegate.swift */,
-				C59090521F8C3C4B00C2CDD8 /* ViewController.swift */,
 				C59090541F8C3C4B00C2CDD8 /* Main.storyboard */,
 				C590905A1F8C3C4B00C2CDD8 /* Assets.xcassets */,
 				C590905C1F8C3C4B00C2CDD8 /* LaunchScreen.storyboard */,
 				C590905F1F8C3C4B00C2CDD8 /* Info.plist */,
 				C59090571F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline.xcdatamodeld */,
 			);
-			path = ForcastFlightForAlaskaAirline;
+			path = "Display Flight Information";
 			sourceTree = "<group>";
 		};
 		C59090671F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineTests */ = {
@@ -131,9 +172,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C590904C1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline */ = {
+		C590904C1F8C3C4B00C2CDD8 /* DisplayFlightInformation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C59090781F8C3C4C00C2CDD8 /* Build configuration list for PBXNativeTarget "ForcastFlightForAlaskaAirline" */;
+			buildConfigurationList = C59090781F8C3C4C00C2CDD8 /* Build configuration list for PBXNativeTarget "DisplayFlightInformation" */;
 			buildPhases = (
 				C59090491F8C3C4B00C2CDD8 /* Sources */,
 				C590904A1F8C3C4B00C2CDD8 /* Frameworks */,
@@ -143,14 +184,14 @@
 			);
 			dependencies = (
 			);
-			name = ForcastFlightForAlaskaAirline;
+			name = DisplayFlightInformation;
 			productName = ForcastFlightForAlaskaAirline;
-			productReference = C590904D1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline.app */;
+			productReference = C590904D1F8C3C4B00C2CDD8 /* DisplayFlightInformation.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C59090631F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineTests */ = {
+		C59090631F8C3C4B00C2CDD8 /* DisplayFlightInformationTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C590907B1F8C3C4C00C2CDD8 /* Build configuration list for PBXNativeTarget "ForcastFlightForAlaskaAirlineTests" */;
+			buildConfigurationList = C590907B1F8C3C4C00C2CDD8 /* Build configuration list for PBXNativeTarget "DisplayFlightInformationTests" */;
 			buildPhases = (
 				C59090601F8C3C4B00C2CDD8 /* Sources */,
 				C59090611F8C3C4B00C2CDD8 /* Frameworks */,
@@ -161,14 +202,14 @@
 			dependencies = (
 				C59090661F8C3C4B00C2CDD8 /* PBXTargetDependency */,
 			);
-			name = ForcastFlightForAlaskaAirlineTests;
+			name = DisplayFlightInformationTests;
 			productName = ForcastFlightForAlaskaAirlineTests;
-			productReference = C59090641F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineTests.xctest */;
+			productReference = C59090641F8C3C4B00C2CDD8 /* DisplayFlightInformationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C590906E1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineUITests */ = {
+		C590906E1F8C3C4B00C2CDD8 /* DisplayFlightInformationUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C590907E1F8C3C4C00C2CDD8 /* Build configuration list for PBXNativeTarget "ForcastFlightForAlaskaAirlineUITests" */;
+			buildConfigurationList = C590907E1F8C3C4C00C2CDD8 /* Build configuration list for PBXNativeTarget "DisplayFlightInformationUITests" */;
 			buildPhases = (
 				C590906B1F8C3C4B00C2CDD8 /* Sources */,
 				C590906C1F8C3C4B00C2CDD8 /* Frameworks */,
@@ -179,9 +220,9 @@
 			dependencies = (
 				C59090711F8C3C4B00C2CDD8 /* PBXTargetDependency */,
 			);
-			name = ForcastFlightForAlaskaAirlineUITests;
+			name = DisplayFlightInformationUITests;
 			productName = ForcastFlightForAlaskaAirlineUITests;
-			productReference = C590906F1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineUITests.xctest */;
+			productReference = C590906F1F8C3C4B00C2CDD8 /* DisplayFlightInformationUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -210,7 +251,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C59090481F8C3C4B00C2CDD8 /* Build configuration list for PBXProject "ForcastFlightForAlaskaAirline" */;
+			buildConfigurationList = C59090481F8C3C4B00C2CDD8 /* Build configuration list for PBXProject "DisplayFlightInformation" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -223,9 +264,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C590904C1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline */,
-				C59090631F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineTests */,
-				C590906E1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineUITests */,
+				C590904C1F8C3C4B00C2CDD8 /* DisplayFlightInformation */,
+				C59090631F8C3C4B00C2CDD8 /* DisplayFlightInformationTests */,
+				C590906E1F8C3C4B00C2CDD8 /* DisplayFlightInformationUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -263,8 +304,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C59090591F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline.xcdatamodeld in Sources */,
-				C59090531F8C3C4B00C2CDD8 /* ViewController.swift in Sources */,
+				C56DCC351F8C7FA40089BA97 /* FlightDisplayCell.swift in Sources */,
+				C56DCC371F8C7FCE0089BA97 /* FlightInformationList.swift in Sources */,
+				C59090531F8C3C4B00C2CDD8 /* FlightSearchViewController.swift in Sources */,
 				C59090511F8C3C4B00C2CDD8 /* AppDelegate.swift in Sources */,
+				C56DCC2F1F8C703C0089BA97 /* FlightDataInformation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,12 +333,12 @@
 /* Begin PBXTargetDependency section */
 		C59090661F8C3C4B00C2CDD8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C590904C1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline */;
+			target = C590904C1F8C3C4B00C2CDD8 /* DisplayFlightInformation */;
 			targetProxy = C59090651F8C3C4B00C2CDD8 /* PBXContainerItemProxy */;
 		};
 		C59090711F8C3C4B00C2CDD8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C590904C1F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirline */;
+			target = C590904C1F8C3C4B00C2CDD8 /* DisplayFlightInformation */;
 			targetProxy = C59090701F8C3C4B00C2CDD8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -431,7 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ForcastFlightForAlaskaAirline/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Display Flight Information/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ashim.ForcastFlightForAlaskaAirline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,7 +489,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ForcastFlightForAlaskaAirline/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Display Flight Information/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ashim.ForcastFlightForAlaskaAirline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -466,7 +510,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ForcastFlightForAlaskaAirline.app/ForcastFlightForAlaskaAirline";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DisplayFlightInformation.app/DisplayFlightInformation";
 			};
 			name = Debug;
 		};
@@ -482,7 +526,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ForcastFlightForAlaskaAirline.app/ForcastFlightForAlaskaAirline";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DisplayFlightInformation.app/DisplayFlightInformation";
 			};
 			name = Release;
 		};
@@ -519,7 +563,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C59090481F8C3C4B00C2CDD8 /* Build configuration list for PBXProject "ForcastFlightForAlaskaAirline" */ = {
+		C59090481F8C3C4B00C2CDD8 /* Build configuration list for PBXProject "DisplayFlightInformation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C59090761F8C3C4C00C2CDD8 /* Debug */,
@@ -528,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C59090781F8C3C4C00C2CDD8 /* Build configuration list for PBXNativeTarget "ForcastFlightForAlaskaAirline" */ = {
+		C59090781F8C3C4C00C2CDD8 /* Build configuration list for PBXNativeTarget "DisplayFlightInformation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C59090791F8C3C4C00C2CDD8 /* Debug */,
@@ -537,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C590907B1F8C3C4C00C2CDD8 /* Build configuration list for PBXNativeTarget "ForcastFlightForAlaskaAirlineTests" */ = {
+		C590907B1F8C3C4C00C2CDD8 /* Build configuration list for PBXNativeTarget "DisplayFlightInformationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C590907C1F8C3C4C00C2CDD8 /* Debug */,
@@ -546,7 +590,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C590907E1F8C3C4C00C2CDD8 /* Build configuration list for PBXNativeTarget "ForcastFlightForAlaskaAirlineUITests" */ = {
+		C590907E1F8C3C4C00C2CDD8 /* Build configuration list for PBXNativeTarget "DisplayFlightInformationUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C590907F1F8C3C4C00C2CDD8 /* Debug */,
