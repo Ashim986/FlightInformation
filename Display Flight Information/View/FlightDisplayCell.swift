@@ -10,12 +10,27 @@ import UIKit
 
 class  FlightDisplayCell: UITableViewCell {
     
+     var flightDataItem: Any? {
+        didSet {
+            guard let flightDataInfo = flightDataItem as? FlightDataInformation else {
+                return
+            }
+
+            cellFlightIDLabel.text = flightDataInfo.FltId
+            cellOriginLabel.text = flightDataInfo.Orig
+            cellDestinationLabel.text = flightDataInfo.Dest
+            cellScheduleArrivalTimeLabel.text = flightDataInfo.SchedArrTime
+            cellEstimatedArrivalTimeLabel.text = flightDataInfo.EstArrTime
+            
+        }
+    }
+    
     let cellSerialNumberLabel = Utility.customLabel(lblTitle: "S/N")
     let cellFlightIDLabel = Utility.customLabel(lblTitle: "Flight ID")
-    let cellOriginLabel : UILabel = Utility.customLabel(lblTitle: "Origin")
-    let cellDestinationLabel : UILabel = Utility.customLabel(lblTitle: "Destination")
-    let cellScheduleArrivalTimeLabel : UILabel = Utility.customLabel(lblTitle: "Sched Arrival Time")
-    let cellEstimatedArrivalTimeLabel : UILabel = Utility.customLabel(lblTitle:"Est Arrival Time")
+    let cellOriginLabel  = Utility.customLabel(lblTitle: "Origin")
+    let cellDestinationLabel  = Utility.customLabel(lblTitle: "Destination")
+    let cellScheduleArrivalTimeLabel  = Utility.customLabel(lblTitle: "Sched Arrival Time")
+    let cellEstimatedArrivalTimeLabel  = Utility.customLabel(lblTitle:"Est Arrival Time")
     
     let cellSerialNumberView : UIView = {
         let view = UIView()
@@ -38,6 +53,7 @@ class  FlightDisplayCell: UITableViewCell {
         displayInformationLabelStackViewForCell.translatesAutoresizingMaskIntoConstraints = false
         
         // add sub view to table cell
+        
         addSubview(displayInformationLabelStackViewForCell)
         addSubview(cellSerialNumberLabel)
         addSubview(cellFlightIDLabel)
@@ -45,6 +61,7 @@ class  FlightDisplayCell: UITableViewCell {
         addSubview(cellDestinationLabel)
         addSubview(cellScheduleArrivalTimeLabel)
         addSubview(cellEstimatedArrivalTimeLabel)
+        
         
         // layout for Stack View
     NSLayoutConstraint.activate([displayInformationLabelStackViewForCell.leadingAnchor.constraint(equalTo: self.leadingAnchor), displayInformationLabelStackViewForCell.topAnchor.constraint(equalTo: self.topAnchor),displayInformationLabelStackViewForCell.widthAnchor.constraint(equalTo :self.widthAnchor), displayInformationLabelStackViewForCell.heightAnchor.constraint(equalTo : self.heightAnchor)])

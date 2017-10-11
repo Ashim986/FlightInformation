@@ -20,6 +20,7 @@
 		C590905E1F8C3C4B00C2CDD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C590905C1F8C3C4B00C2CDD8 /* LaunchScreen.storyboard */; };
 		C59090691F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59090681F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineTests.swift */; };
 		C59090741F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59090731F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineUITests.swift */; };
+		C5A045DA1F8DDAD100D2BB0F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A045D91F8DDAD100D2BB0F /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		C590906F1F8C3C4B00C2CDD8 /* DisplayFlightInformationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisplayFlightInformationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59090731F8C3C4B00C2CDD8 /* ForcastFlightForAlaskaAirlineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcastFlightForAlaskaAirlineUITests.swift; sourceTree = "<group>"; };
 		C59090751F8C3C4C00C2CDD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5A045D91F8DDAD100D2BB0F /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				C56DCC401F8D8A5D0089BA97 /* Utility.swift */,
+				C5A045D91F8DDAD100D2BB0F /* Service.swift */,
 			);
 			path = "Supporting File";
 			sourceTree = "<group>";
@@ -97,9 +100,7 @@
 		C56DCC311F8C7F690089BA97 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C59090521F8C3C4B00C2CDD8 /* FlightSearchViewController.swift */,
 				C56DCC361F8C7FCE0089BA97 /* FlightInformationList.swift */,
-				C56DCC3A1F8D42B90089BA97 /* FlightInformationHeaderSection.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -108,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				C56DCC341F8C7FA40089BA97 /* FlightDisplayCell.swift */,
+				C59090521F8C3C4B00C2CDD8 /* FlightSearchViewController.swift */,
+				C56DCC3A1F8D42B90089BA97 /* FlightInformationHeaderSection.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				C56DCC371F8C7FCE0089BA97 /* FlightInformationList.swift in Sources */,
 				C59090531F8C3C4B00C2CDD8 /* FlightSearchViewController.swift in Sources */,
 				C56DCC411F8D8A5D0089BA97 /* Utility.swift in Sources */,
+				C5A045DA1F8DDAD100D2BB0F /* Service.swift in Sources */,
 				C59090511F8C3C4B00C2CDD8 /* AppDelegate.swift in Sources */,
 				C56DCC2F1F8C703C0089BA97 /* FlightDataInformation.swift in Sources */,
 				C56DCC3B1F8D42B90089BA97 /* FlightInformationHeaderSection.swift in Sources */,

@@ -9,10 +9,7 @@
 import UIKit
 
 class FlightSearchViewController: UIViewController {
-    
-    var flightData = [FlightDataInformation]()
-    
-    
+
     let informationLabel : UILabel = {
        let label = UILabel()
         label.text = "Please enter three digit airport code to find information about flight detail"
@@ -26,7 +23,7 @@ class FlightSearchViewController: UIViewController {
         return label
     }()
     
-    var textFieldForAirportCode : UITextField = {
+   public var textFieldForAirportCode : UITextField = {
         let textField = UITextField()
         textField.backgroundColor = .clear
         textField.placeholder = "Enter Code"
@@ -55,7 +52,6 @@ class FlightSearchViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,8 +86,6 @@ class FlightSearchViewController: UIViewController {
         
     }
     
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -99,57 +93,13 @@ class FlightSearchViewController: UIViewController {
     
     @objc func handelSearchButton(){
     
-        if let destinationCity = textFieldForAirportCode.text {
-        
-            loadDataFromService(destination: destinationCity)
             let flightInformationList = UINavigationController(rootViewController: FlightInformationList())
             present(flightInformationList, animated: true, completion: nil)
-        }
-        
-    }
-    
-    func loadDataFromService (destination: String)  {
-        
-        guard let url = URL(string: "https://api.qa.alaskaair.com/1/airports/\(destination)/flights/flightInfo?city=\(destination)&minutesBehind=10&minutesAhead=120") else {return }
-        
-        var request = URLRequest(url: url)
-        request.httpMethod = "GET"
-        request.setValue("Basic YWFnZTQxNDAxMjgwODYyNDk3NWFiYWNhZjlhNjZjMDRlMWY6ODYyYTk0NTFhYjliNGY1M2EwZWJiOWI2ZWQ1ZjYwOGM= ", forHTTPHeaderField: "Authorization")
-        
-        //making the request
-        URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let data = data else {return}
-            do {
-                let dataFromFlight  = try JSONDecoder().decode([FlightDataInformation].self, from: data)
-               self.flightData = dataFromFlight
-                
-            }catch let jsonErr{
-                print(jsonErr)
-            }
-            
-            }.resume()
-        
-    }
-    func addingforPrinting(json : Any)  {
-        let decodedValue = json
-        
-        print(decodedValue)
     }
     
 }
 
 
-
-//                let dataAsString = String(data: data, encoding: .utf8)
-//                print(dataAsString!)
-//
-//                swift 2
-//
-//                let data = self.[FlightInfo]
-//
-//                guard let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [[String : Any]] else {return}
-//
-//                self.flightInfo = json.map{FlightInfo(json: $0)}
 
 
 

@@ -9,7 +9,7 @@
 import UIKit
 
 class Utility: NSObject {
-
+    
     class func customLabel(lblTitle : String) -> UILabel{
         let label =  UILabel()
         label.text = lblTitle
@@ -17,7 +17,7 @@ class Utility: NSObject {
         label.font = UIFont.boldSystemFont(ofSize: 10)
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
         label.numberOfLines = 2
-        label.textAlignment = .left
+        label.textAlignment = .center
         label.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         label.layer.borderWidth = 1
         label.layer.borderColor = UIColor.white.cgColor
@@ -30,5 +30,35 @@ class Utility: NSObject {
         NSLayoutConstraint.activate([textLabel.leadingAnchor.constraint(equalTo: textLabelView.leadingAnchor), textLabel.trailingAnchor.constraint(equalTo: textLabelView.trailingAnchor),textLabel.widthAnchor.constraint(equalTo :textLabelView.widthAnchor), textLabel.heightAnchor.constraint(equalTo: textLabelView.heightAnchor)])
         
     }
+    
+    
+    class func formatDate(dateValue :String, destinationOffset : String , originOffset: String)-> String{
+        var evaluatedDate = dateValue
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss "
+        let calendar = Calendar.current
+        if let previousDateFormated : Date = dateFormatter.date(from: evaluatedDate)
+        {
+            var hour = calendar.component(.hour, from: previousDateFormated)
+            hour = hour - Int(destinationOffset)! + Int(originOffset)!
+            let minute = calendar.component(.minute, from: previousDateFormated)
+            
+            if hour >= 12 && minute >= 0 {
+                if hour == 12 {
+                    evaluatedDate = "\(hour):\(minute) PM"
+                    return evaluatedDate
+                }else{
+                    evaluatedDate = "\(hour - 12):\(minute) PM"
+                    return evaluatedDate
+                }
+                
+            }else {
+                evaluatedDate = "\(hour):\(minute) AM"
+                return evaluatedDate
+            }
+        }
+        return evaluatedDate
+    }
+    
 }
 

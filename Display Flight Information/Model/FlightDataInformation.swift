@@ -8,12 +8,14 @@
 
 import UIKit
 
-struct FlightDataInformation : Decodable {
-    let FltId : String
-    let Orig : String
-    let Dest : String
-    let SchedArrTime : String
-    let EstArrTime : String
-    let DestZuluOffset : String
+class FlightDataInformation : Decodable {
+    var FltId : String
+    var Orig : String
+    var Dest : String
+    var SchedArrTime : String
+    var EstArrTime : String
+    var DestZuluOffset : String
+    var OrigZuluOffset : String
+    
     
 }
