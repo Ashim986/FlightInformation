@@ -120,8 +120,8 @@ class FlightSearchViewController: UIViewController {
         URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data else {return}
             do {
-                self.flightData = try JSONDecoder().decode([FlightDataInformation].self, from: data)
-                print(self.flightData)
+                let dataFromFlight  = try JSONDecoder().decode([FlightDataInformation].self, from: data)
+               self.flightData = dataFromFlight
                 
             }catch let jsonErr{
                 print(jsonErr)

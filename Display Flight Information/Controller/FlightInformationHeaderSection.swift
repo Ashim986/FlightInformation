@@ -11,92 +11,16 @@ import UIKit
 extension FlightInformationList{
     
     func displayHeaderList () -> UIView{
-    let serialNumberLabel : UILabel = {
-            let label =  UILabel()
-            label.text = "S/N"
-            label.textColor = .black
-            label.font = UIFont.boldSystemFont(ofSize: 10)
-            label.lineBreakMode = NSLineBreakMode.byWordWrapping
-            label.numberOfLines = 2
-            label.textAlignment = .left
-            label.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-            label.layer.borderWidth = 1
-            label.layer.borderColor = UIColor.white.cgColor
-            label.translatesAutoresizingMaskIntoConstraints = false
-            return label
-        }()
         
-        let flightIDLabel : UILabel = {
-            let label =  UILabel()
-            label.text = "Flight ID"
-            label.textColor = .black
-            label.font = UIFont.boldSystemFont(ofSize: 10)
-            label.lineBreakMode = NSLineBreakMode.byWordWrapping
-            label.numberOfLines = 2
-            label.textAlignment = .left
-            label.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-            label.layer.borderWidth = 1
-            label.layer.borderColor = UIColor.white.cgColor
-            label.translatesAutoresizingMaskIntoConstraints = false
-            return label
-        }()
-        let originLabel : UILabel = {
-            let label =  UILabel()
-            label.text = "Origin"
-            label.textColor = .black
-            label.font = UIFont.boldSystemFont(ofSize: 10)
-            label.lineBreakMode = NSLineBreakMode.byWordWrapping
-            label.numberOfLines = 2
-            label.textAlignment = .left
-            label.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-            label.layer.borderWidth = 1
-            label.layer.borderColor = UIColor.white.cgColor
-            label.translatesAutoresizingMaskIntoConstraints = false
-            return label
-        }()
-        let destinationLabel : UILabel = {
-            let label =  UILabel()
-            label.text = "Destination"
-            label.textColor = .black
-            label.font = UIFont.boldSystemFont(ofSize: 10)
-            label.lineBreakMode = NSLineBreakMode.byWordWrapping
-            label.numberOfLines = 2
-            label.textAlignment = .left
-            label.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-            label.layer.borderWidth = 1
-            label.layer.borderColor = UIColor.white.cgColor
-            label.translatesAutoresizingMaskIntoConstraints = false
-            return label
-        }()
-        let scheduleArrivalTimeLabel : UILabel = {
-            let label =  UILabel()
-            label.text = "Sched Arrival Time"
-            label.textColor = .black
-            label.font = UIFont.boldSystemFont(ofSize: 10)
-            label.lineBreakMode = NSLineBreakMode.byWordWrapping
-            label.numberOfLines = 2
-            label.textAlignment = .left
-            label.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-            label.layer.borderWidth = 1
-            label.layer.borderColor = UIColor.white.cgColor
-            label.translatesAutoresizingMaskIntoConstraints = false
-            return label
-        }()
-        let estimatedArrivalTimeLabel : UILabel = {
-            let label =  UILabel()
-            label.text = "Est Arrival Time"
-            label.textColor = .black
-            label.font = UIFont.boldSystemFont(ofSize: 10)
-            label.lineBreakMode = NSLineBreakMode.byWordWrapping
-            label.numberOfLines = 2
-            label.textAlignment = .left
-            label.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-            label.layer.borderWidth = 1
-            label.layer.borderColor = UIColor.white.cgColor
-            label.translatesAutoresizingMaskIntoConstraints = false
-            return label
-        }()
+        let serialNumberLabel = Utility.customLabel(lblTitle: "S/N")
+        let flightIDLabel = Utility.customLabel(lblTitle: "Flight ID")
+        let originLabel : UILabel = Utility.customLabel(lblTitle: "Origin")
+        let destinationLabel : UILabel = Utility.customLabel(lblTitle: "Destination")
+        let scheduleArrivalTimeLabel : UILabel = Utility.customLabel(lblTitle: "Sched Arrival Time")
+        let estimatedArrivalTimeLabel : UILabel = Utility.customLabel(lblTitle:"Est Arrival Time")
    
+
+  
     let serialNumberView = UIView()
     let flightIDView = UIView()
     let originView = UIView()
@@ -119,23 +43,17 @@ extension FlightInformationList{
     view.addSubview(displayInformationLabelStackView)
     // Anchor For Stack Views and Label
     // x,y, height and width
-    NSLayoutConstraint.activate([displayInformationLabelStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor), displayInformationLabelStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor ),displayInformationLabelStackView.widthAnchor.constraint(equalTo :view.widthAnchor), displayInformationLabelStackView.heightAnchor.constraint(equalToConstant: 30)])
+    NSLayoutConstraint.activate([displayInformationLabelStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0), displayInformationLabelStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),displayInformationLabelStackView.widthAnchor.constraint(equalTo :view.widthAnchor), displayInformationLabelStackView.heightAnchor.constraint(equalToConstant: 30)])
     
     
     // label Anchor
     
-    NSLayoutConstraint.activate([serialNumberLabel.leadingAnchor.constraint(equalTo: serialNumberView.leadingAnchor), serialNumberLabel.trailingAnchor.constraint(equalTo: serialNumberView.trailingAnchor),serialNumberLabel.widthAnchor.constraint(equalTo :serialNumberView.widthAnchor), serialNumberLabel.heightAnchor.constraint(equalTo: serialNumberView.heightAnchor)])
-    
-    NSLayoutConstraint.activate([flightIDLabel.leadingAnchor.constraint(equalTo: flightIDView.leadingAnchor), flightIDLabel.trailingAnchor.constraint(equalTo: flightIDView.trailingAnchor),flightIDLabel.widthAnchor.constraint(equalTo :flightIDView.widthAnchor), flightIDLabel.heightAnchor.constraint(equalTo: flightIDView.heightAnchor)])
-    
-    NSLayoutConstraint.activate([originLabel.leadingAnchor.constraint(equalTo: originView.leadingAnchor), originLabel.trailingAnchor.constraint(equalTo: originView.trailingAnchor),originLabel.widthAnchor.constraint(equalTo :originView.widthAnchor), originLabel.heightAnchor.constraint(equalTo: originView.heightAnchor)])
-    
-    NSLayoutConstraint.activate([destinationLabel.leadingAnchor.constraint(equalTo: destinationView.leadingAnchor), destinationLabel.trailingAnchor.constraint(equalTo: destinationView.trailingAnchor),destinationLabel.widthAnchor.constraint(equalTo :destinationView.widthAnchor), destinationLabel.heightAnchor.constraint(equalTo: destinationView.heightAnchor)])
-    
-    NSLayoutConstraint.activate([scheduleArrivalTimeLabel.leadingAnchor.constraint(equalTo: scheduleArrivalTimeView.leadingAnchor), scheduleArrivalTimeLabel.trailingAnchor.constraint(equalTo: scheduleArrivalTimeView.trailingAnchor),scheduleArrivalTimeLabel.widthAnchor.constraint(equalTo :scheduleArrivalTimeView.widthAnchor), scheduleArrivalTimeLabel.heightAnchor.constraint(equalTo: scheduleArrivalTimeView.heightAnchor)])
-    
-    NSLayoutConstraint.activate([estimatedArrivalTimeLabel.leadingAnchor.constraint(equalTo: estimatedArrivalTime.leadingAnchor), estimatedArrivalTimeLabel.trailingAnchor.constraint(equalTo: estimatedArrivalTime.trailingAnchor),estimatedArrivalTimeLabel.widthAnchor.constraint(equalTo :estimatedArrivalTime.widthAnchor), estimatedArrivalTimeLabel.heightAnchor.constraint(equalTo: estimatedArrivalTime.heightAnchor)])
-   
+        Utility.anchorForLayout(textLabel: serialNumberLabel, textLabelView: serialNumberView)
+        Utility.anchorForLayout(textLabel: flightIDLabel, textLabelView: flightIDView)
+        Utility.anchorForLayout(textLabel: originLabel, textLabelView: originView)
+        Utility.anchorForLayout(textLabel: destinationLabel, textLabelView: destinationView)
+        Utility.anchorForLayout(textLabel: scheduleArrivalTimeLabel, textLabelView: scheduleArrivalTimeView)
+        Utility.anchorForLayout(textLabel: estimatedArrivalTimeLabel, textLabelView: estimatedArrivalTime)
     
     return displayInformationLabelStackView 
     }

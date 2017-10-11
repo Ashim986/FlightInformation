@@ -74,13 +74,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Display Flight Information/Controller/FlightSearchViewController.swift"
-            timestampString = "529351528.078871"
+            timestampString = "529377999.462442"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "loadDataFromService(destination:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__ObjC.URLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in DisplayFlightInformation.FlightSearchViewController.loadDataFromService(destination: Swift.String) -&gt; ()"
+                  moduleName = "DisplayFlightInformation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ashimdahal/Desktop/ForcastFlightForAlaskaAirline/Display%20Flight%20Information/Controller/FlightSearchViewController.swift"
+                  timestampString = "529377999.527677"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "472">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__ObjC.URLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in DisplayFlightInformation.FlightSearchViewController.loadDataFromService(destination: Swift.String) -&gt; ()"
+                  moduleName = "DisplayFlightInformation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ashimdahal/Desktop/ForcastFlightForAlaskaAirline/Display%20Flight%20Information/Controller/FlightSearchViewController.swift"
+                  timestampString = "529377999.53215"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "957">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__ObjC.URLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in DisplayFlightInformation.FlightSearchViewController.loadDataFromService(destination: Swift.String) -&gt; ()"
+                  moduleName = "DisplayFlightInformation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ashimdahal/Desktop/ForcastFlightForAlaskaAirline/Display%20Flight%20Information/Controller/FlightSearchViewController.swift"
+                  timestampString = "529377999.539478"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "988">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -90,7 +137,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Display Flight Information/Controller/FlightSearchViewController.swift"
-            timestampString = "529351528.079053"
+            timestampString = "529377999.463569"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "104"
@@ -106,7 +153,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Display Flight Information/Controller/FlightSearchViewController.swift"
-            timestampString = "529351528.079162"
+            timestampString = "529377999.463831"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "111"
@@ -122,12 +169,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Display Flight Information/Controller/FlightSearchViewController.swift"
-            timestampString = "529351528.079287"
+            timestampString = "529377999.464107"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "115"
             endingLineNumber = "115"
             landmarkName = "loadDataFromService(destination:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Display Flight Information/Controller/FlightInformationList.swift"
+            timestampString = "529377999.464525"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

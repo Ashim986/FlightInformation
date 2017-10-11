@@ -11,6 +11,7 @@
 		C56DCC351F8C7FA40089BA97 /* FlightDisplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56DCC341F8C7FA40089BA97 /* FlightDisplayCell.swift */; };
 		C56DCC371F8C7FCE0089BA97 /* FlightInformationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56DCC361F8C7FCE0089BA97 /* FlightInformationList.swift */; };
 		C56DCC3B1F8D42B90089BA97 /* FlightInformationHeaderSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56DCC3A1F8D42B90089BA97 /* FlightInformationHeaderSection.swift */; };
+		C56DCC411F8D8A5D0089BA97 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56DCC401F8D8A5D0089BA97 /* Utility.swift */; };
 		C59090511F8C3C4B00C2CDD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59090501F8C3C4B00C2CDD8 /* AppDelegate.swift */; };
 		C59090531F8C3C4B00C2CDD8 /* FlightSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59090521F8C3C4B00C2CDD8 /* FlightSearchViewController.swift */; };
 		C59090561F8C3C4B00C2CDD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C59090541F8C3C4B00C2CDD8 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		C56DCC341F8C7FA40089BA97 /* FlightDisplayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDisplayCell.swift; sourceTree = "<group>"; };
 		C56DCC361F8C7FCE0089BA97 /* FlightInformationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInformationList.swift; sourceTree = "<group>"; };
 		C56DCC3A1F8D42B90089BA97 /* FlightInformationHeaderSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInformationHeaderSection.swift; sourceTree = "<group>"; };
+		C56DCC401F8D8A5D0089BA97 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		C590904D1F8C3C4B00C2CDD8 /* DisplayFlightInformation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisplayFlightInformation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59090501F8C3C4B00C2CDD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C59090521F8C3C4B00C2CDD8 /* FlightSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchViewController.swift; sourceTree = "<group>"; };
@@ -84,11 +86,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C56DCC301F8C7F5C0089BA97 /* Service */ = {
+		C56DCC301F8C7F5C0089BA97 /* Supporting File */ = {
 			isa = PBXGroup;
 			children = (
+				C56DCC401F8D8A5D0089BA97 /* Utility.swift */,
 			);
-			path = Service;
+			path = "Supporting File";
 			sourceTree = "<group>";
 		};
 		C56DCC311F8C7F690089BA97 /* Controller */ = {
@@ -143,7 +146,7 @@
 				C56DCC331F8C7F790089BA97 /* Model */,
 				C56DCC321F8C7F720089BA97 /* View */,
 				C56DCC311F8C7F690089BA97 /* Controller */,
-				C56DCC301F8C7F5C0089BA97 /* Service */,
+				C56DCC301F8C7F5C0089BA97 /* Supporting File */,
 				C59090501F8C3C4B00C2CDD8 /* AppDelegate.swift */,
 				C59090541F8C3C4B00C2CDD8 /* Main.storyboard */,
 				C590905A1F8C3C4B00C2CDD8 /* Assets.xcassets */,
@@ -310,6 +313,7 @@
 				C56DCC351F8C7FA40089BA97 /* FlightDisplayCell.swift in Sources */,
 				C56DCC371F8C7FCE0089BA97 /* FlightInformationList.swift in Sources */,
 				C59090531F8C3C4B00C2CDD8 /* FlightSearchViewController.swift in Sources */,
+				C56DCC411F8D8A5D0089BA97 /* Utility.swift in Sources */,
 				C59090511F8C3C4B00C2CDD8 /* AppDelegate.swift in Sources */,
 				C56DCC2F1F8C703C0089BA97 /* FlightDataInformation.swift in Sources */,
 				C56DCC3B1F8D42B90089BA97 /* FlightInformationHeaderSection.swift in Sources */,
