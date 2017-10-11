@@ -53,17 +53,21 @@ class FlightInformationList: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as? FlightDisplayCell
+        
         let dataInFlight = flightDisplay[indexPath.row]
-        let estimatedArrivalTime = Utility.formatDate(dateValue: dataInFlight.EstArrTime, destinationOffset: dataInFlight.DestZuluOffset, originOffset: dataInFlight.OrigZuluOffset)
-        let scheduledArrivalTime = Utility.formatDate(dateValue: dataInFlight.SchedArrTime, destinationOffset: dataInFlight.DestZuluOffset, originOffset: dataInFlight.OrigZuluOffset)
-        var count = 1
-        count += 1
-        cell?.cellSerialNumberLabel.text = "\(count)"
-        cell?.cellFlightIDLabel.text = dataInFlight.FltId
-        cell?.cellOriginLabel.text = dataInFlight.Orig
-        cell?.cellDestinationLabel.text = dataInFlight.Dest
-        cell?.cellScheduleArrivalTimeLabel.text = scheduledArrivalTime
-        cell?.cellEstimatedArrivalTimeLabel.text = estimatedArrivalTime
+        
+        let estimatedArrivalTime = Utility.formatDate(dateValue: dataInFlight.EstArrTime, destinationOffset: dataInFlight.DestZuluOffset, originOffset: dataInFlight.OrigZuluOffset , currentTime: Date())
+        let scheduledArrivalTime = Utility.formatDate(dateValue: dataInFlight.SchedArrTime, destinationOffset: dataInFlight.DestZuluOffset, originOffset: dataInFlight.OrigZuluOffset, currentTime: Date())
+        if (estimatedArrivalTime != nil) && (scheduledArrivalTime != nil){
+            
+            cell?.cellSerialNumberLabel.text = "\(indexPath.row + 1)"
+            cell?.cellFlightIDLabel.text = dataInFlight.FltId
+            cell?.cellOriginLabel.text = dataInFlight.Orig
+            cell?.cellDestinationLabel.text = dataInFlight.Dest
+            cell?.cellScheduleArrivalTimeLabel.text = scheduledArrivalTime
+            cell?.cellEstimatedArrivalTimeLabel.text = estimatedArrivalTime
+            
+        }
         
         return cell!
     }
@@ -75,4 +79,5 @@ class FlightInformationList: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 30
     }
+    
 }

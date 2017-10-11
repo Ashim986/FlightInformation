@@ -23,7 +23,7 @@ class FlightSearchViewController: UIViewController {
         return label
     }()
     
-   public var textFieldForAirportCode : UITextField = {
+    var textFieldForAirportCode : UITextField = {
         let textField = UITextField()
         textField.backgroundColor = .clear
         textField.placeholder = "Enter Code"

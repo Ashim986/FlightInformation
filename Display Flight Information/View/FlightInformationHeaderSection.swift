@@ -12,12 +12,12 @@ extension FlightInformationList{
     
     func displayHeaderList () -> UIView{
         
-        let serialNumberLabel = Utility.customLabel(lblTitle: "S/N")
-        let flightIDLabel = Utility.customLabel(lblTitle: "Flight ID")
-        let originLabel : UILabel = Utility.customLabel(lblTitle: "Origin")
-        let destinationLabel : UILabel = Utility.customLabel(lblTitle: "Destination")
-        let scheduleArrivalTimeLabel : UILabel = Utility.customLabel(lblTitle: "Sched Arrival Time")
-        let estimatedArrivalTimeLabel : UILabel = Utility.customLabel(lblTitle:"Est Arrival Time")
+        let serialNumberLabel = Utility.customHeaderLabel(lblTitle: "S/N")
+        let flightIDLabel = Utility.customHeaderLabel(lblTitle: "Flight ID")
+        let originLabel : UILabel = Utility.customHeaderLabel(lblTitle: "Origin")
+        let destinationLabel : UILabel = Utility.customHeaderLabel(lblTitle: "Destination")
+        let scheduleArrivalTimeLabel : UILabel = Utility.customHeaderLabel(lblTitle: "Sched Arrival Time")
+        let estimatedArrivalTimeLabel : UILabel = Utility.customHeaderLabel(lblTitle:"Est Arrival Time")
    
 
   
