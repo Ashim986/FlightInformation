@@ -17,7 +17,6 @@ class  FlightDisplayCell: UITableViewCell {
             }
             cellFlightIDLabel.text = flightDataInfo.FltId
             cellOriginLabel.text = flightDataInfo.Orig
-            cellDestinationLabel.text = flightDataInfo.Dest
             cellScheduleArrivalTimeLabel.text = flightDataInfo.SchedArrTime
             cellEstimatedArrivalTimeLabel.text = flightDataInfo.EstArrTime
         }
@@ -26,7 +25,6 @@ class  FlightDisplayCell: UITableViewCell {
     let cellSerialNumberLabel = Utility.customLabel(lblTitle: "S/N")
     let cellFlightIDLabel = Utility.customLabel(lblTitle: "Flight ID")
     let cellOriginLabel  = Utility.customLabel(lblTitle: "Origin")
-    let cellDestinationLabel  = Utility.customLabel(lblTitle: "Destination")
     let cellScheduleArrivalTimeLabel  = Utility.customLabel(lblTitle: "Sched Arrival Time")
     let cellEstimatedArrivalTimeLabel  = Utility.customLabel(lblTitle:"Est Arrival Time")
     
@@ -34,14 +32,13 @@ class  FlightDisplayCell: UITableViewCell {
     let cellSerialNumberView = UIView()
     let cellFlightIDView = UIView()
     let cellOriginView = UIView()
-    let cellDestinationView = UIView()
     let cellScheduleArrivalTimeView = UIView()
     let cellEstimatedArrivalTime = UIView()
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: .default , reuseIdentifier: reuseIdentifier)
         
-        let displayInformationLabelStackViewForCell = UIStackView(arrangedSubviews: [cellSerialNumberView, cellFlightIDView, cellOriginView, cellDestinationView,cellScheduleArrivalTimeView, cellEstimatedArrivalTime])
+        let displayInformationLabelStackViewForCell = UIStackView(arrangedSubviews: [cellSerialNumberView, cellFlightIDView, cellOriginView,cellScheduleArrivalTimeView, cellEstimatedArrivalTime])
         displayInformationLabelStackViewForCell.axis = .horizontal
         displayInformationLabelStackViewForCell.distribution = .fillEqually
         displayInformationLabelStackViewForCell.translatesAutoresizingMaskIntoConstraints = false
@@ -51,7 +48,6 @@ class  FlightDisplayCell: UITableViewCell {
         addSubview(cellSerialNumberLabel)
         addSubview(cellFlightIDLabel)
         addSubview(cellOriginLabel)
-        addSubview(cellDestinationLabel)
         addSubview(cellScheduleArrivalTimeLabel)
         addSubview(cellEstimatedArrivalTimeLabel)
         
@@ -66,7 +62,6 @@ class  FlightDisplayCell: UITableViewCell {
         Utility.anchorForLayout(textLabel: cellSerialNumberLabel, textLabelView: cellSerialNumberView)
         Utility.anchorForLayout(textLabel: cellFlightIDLabel, textLabelView: cellFlightIDView)
         Utility.anchorForLayout(textLabel: cellOriginLabel, textLabelView: cellOriginView)
-        Utility.anchorForLayout(textLabel: cellDestinationLabel, textLabelView: cellDestinationView)
         Utility.anchorForLayout(textLabel: cellScheduleArrivalTimeLabel, textLabelView: cellScheduleArrivalTimeView)
         Utility.anchorForLayout(textLabel: cellEstimatedArrivalTimeLabel, textLabelView: cellEstimatedArrivalTime)
         

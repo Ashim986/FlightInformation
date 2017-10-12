@@ -11,7 +11,6 @@ import UIKit
 class FlightDataInformation : Decodable {
     var FltId : String
     var Orig : String
-    var Dest : String
     var SchedArrTime : String
     var EstArrTime : String
     var DestZuluOffset : String

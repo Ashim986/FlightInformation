@@ -64,7 +64,6 @@ class FlightInformationList: UITableViewController {
         cell?.cellSerialNumberLabel.text = "\(indexPath.row + 1)"
         cell?.cellFlightIDLabel.text = flightData.FltId
         cell?.cellOriginLabel.text = flightData.Orig
-        cell?.cellDestinationLabel.text = flightData.Dest
         cell?.cellEstimatedArrivalTimeLabel.text = estimatedArrivalTime
         cell?.cellScheduleArrivalTimeLabel.text = scheduleArrivalTime
         return cell!

@@ -15,18 +15,16 @@ extension FlightInformationList{
         let serialNumberLabel = Utility.customHeaderLabel(lblTitle: "S/N")
         let flightIDLabel = Utility.customHeaderLabel(lblTitle: "Flight ID")
         let originLabel : UILabel = Utility.customHeaderLabel(lblTitle: "Origin")
-        let destinationLabel : UILabel = Utility.customHeaderLabel(lblTitle: "Destination")
         let scheduleArrivalTimeLabel : UILabel = Utility.customHeaderLabel(lblTitle: "Sched Arrival Time")
         let estimatedArrivalTimeLabel : UILabel = Utility.customHeaderLabel(lblTitle:"Est Arrival Time")
         
         let serialNumberView = UIView()
         let flightIDView = UIView()
         let originView = UIView()
-        let destinationView = UIView()
         let scheduleArrivalTimeView = UIView()
         let estimatedArrivalTime = UIView()
         
-        let displayInformationLabelStackView = UIStackView(arrangedSubviews: [serialNumberView, flightIDView, originView, destinationView,scheduleArrivalTimeView, estimatedArrivalTime])
+        let displayInformationLabelStackView = UIStackView(arrangedSubviews: [serialNumberView, flightIDView, originView,scheduleArrivalTimeView, estimatedArrivalTime])
         displayInformationLabelStackView.axis = .horizontal
         displayInformationLabelStackView.distribution = .fillEqually
         displayInformationLabelStackView.translatesAutoresizingMaskIntoConstraints = false
@@ -34,7 +32,6 @@ extension FlightInformationList{
         view.addSubview(serialNumberLabel)
         view.addSubview(flightIDLabel)
         view.addSubview(originLabel)
-        view.addSubview(destinationLabel)
         view.addSubview(scheduleArrivalTimeLabel)
         view.addSubview(estimatedArrivalTimeLabel)
         view.addSubview(displayInformationLabelStackView)
@@ -46,7 +43,6 @@ extension FlightInformationList{
         Utility.anchorForLayout(textLabel: serialNumberLabel, textLabelView: serialNumberView)
         Utility.anchorForLayout(textLabel: flightIDLabel, textLabelView: flightIDView)
         Utility.anchorForLayout(textLabel: originLabel, textLabelView: originView)
-        Utility.anchorForLayout(textLabel: destinationLabel, textLabelView: destinationView)
         Utility.anchorForLayout(textLabel: scheduleArrivalTimeLabel, textLabelView: scheduleArrivalTimeView)
         Utility.anchorForLayout(textLabel: estimatedArrivalTimeLabel, textLabelView: estimatedArrivalTime)
         return displayInformationLabelStackView 
