@@ -32,9 +32,9 @@ class FlightInformationList: UITableViewController {
                 return
             }
             if let flightDataInfo = flightDataInformation {
-                let estimatedArrivalTime = Utility.formatDate(dateValue:flightDataInfo.EstArrTime, destinationOffset:flightDataInfo.DestZuluOffset, originOffset: flightDataInfo.OrigZuluOffset)
+                let estimatedArrivalTime = Utility.formatDate(dateValue:flightDataInfo.EstArrTime, destinationOffset:flightDataInfo.DestZuluOffset)
                 
-                let scheduleArrivalTime = Utility.formatDate(dateValue:flightDataInfo.SchedArrTime, destinationOffset:flightDataInfo.DestZuluOffset, originOffset: flightDataInfo.OrigZuluOffset)
+                let scheduleArrivalTime = Utility.formatDate(dateValue:flightDataInfo.SchedArrTime, destinationOffset:flightDataInfo.DestZuluOffset)
                 
                 if (estimatedArrivalTime != nil) && (scheduleArrivalTime != nil)
                 {
@@ -45,29 +45,22 @@ class FlightInformationList: UITableViewController {
                 }
             }
         }
-        
     }
-    
     @objc func handleBackButton(){
         dismiss(animated: true, completion: nil)
     }
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return flightDisplay.count
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 64
     }
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as? FlightDisplayCell
         
         let flightData = flightDisplay[indexPath.row]
-
-        let estimatedArrivalTime = Utility.formatDate(dateValue:flightData.EstArrTime, destinationOffset:flightData.DestZuluOffset, originOffset: flightData.OrigZuluOffset)
-        
-        let scheduleArrivalTime = Utility.formatDate(dateValue:flightData.SchedArrTime, destinationOffset:flightData.DestZuluOffset, originOffset: flightData.OrigZuluOffset)
-        
+        let estimatedArrivalTime = Utility.formatDate(dateValue:flightData.EstArrTime, destinationOffset:flightData.DestZuluOffset)
+        let scheduleArrivalTime = Utility.formatDate(dateValue:flightData.SchedArrTime, destinationOffset:flightData.DestZuluOffset)
         
         cell?.cellSerialNumberLabel.text = "\(indexPath.row + 1)"
         cell?.cellFlightIDLabel.text = flightData.FltId
@@ -75,19 +68,13 @@ class FlightInformationList: UITableViewController {
         cell?.cellDestinationLabel.text = flightData.Dest
         cell?.cellEstimatedArrivalTimeLabel.text = estimatedArrivalTime
         cell?.cellScheduleArrivalTimeLabel.text = scheduleArrivalTime
-        
         return cell!
     }
-    
-    
-    
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = displayHeaderList()
         return headerView
     }
-    
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 30
     }
-    
 }

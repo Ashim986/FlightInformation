@@ -24,7 +24,6 @@ class Utility: NSObject {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }
-    
 //    uilabel for table view header
     class func customHeaderLabel(lblTitle : String) -> UILabel{
         let label =  UILabel()
@@ -40,7 +39,6 @@ class Utility: NSObject {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }
-    
 //    anchor for table view cell and label
     class func anchorForLayout(textLabel : UILabel , textLabelView : UIView){
         
@@ -48,21 +46,20 @@ class Utility: NSObject {
         
     }
 //    calculate Date and convert to standard format and send time less than 10 min ago
-    
-    class func formatDate(dateValue :String?, destinationOffset : String?, originOffset : String?)-> String?{
+    class func formatDate(dateValue :String?, destinationOffset : String?)-> String?{
         let currentTime = Date()
         let dateFormatter = DateFormatter()
         let calendar = Calendar.current
      
-        guard let UTCDestination = destinationOffset , let UTCOrigin = originOffset  else {
+        guard let UTCDestination = destinationOffset else {
             return nil
         }
-        let UTCTimeDifference = Int(UTCDestination)! - Int(UTCOrigin)!
+        let UTCTimeDifference = Int(UTCDestination)! + 7 // 7 is UTC Time difference with Seattle
         dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss"
         let evaluatedDate : Date? = dateFormatter.date(from: dateValue!)
-        let differenceInMin = (evaluatedDate?.timeIntervalSince(currentTime))! / 60
+        let dateWithOffsetValue = calendar.date(byAdding: .hour, value: UTCTimeDifference, to: evaluatedDate!)
+        let differenceInMin = (dateWithOffsetValue?.timeIntervalSince(currentTime))! / 60
         if differenceInMin > -10 {
-            let dateWithOffsetValue = calendar.date(byAdding: .hour, value: UTCTimeDifference, to: evaluatedDate!)
             let dateFormatter2 = dateFormatter
             dateFormatter2.dateFormat = "hh:mm a"
             let dateValue = dateFormatter.string(from: dateWithOffsetValue!)
@@ -73,7 +70,6 @@ class Utility: NSObject {
             return nil
         }
     }
-    
     class func sortArrayOfStruct(flightDataArray : [FlightDataInformation])->[FlightDataInformation]{
         
         let unorderedData = flightDataArray[0]

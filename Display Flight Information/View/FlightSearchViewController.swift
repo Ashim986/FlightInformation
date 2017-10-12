@@ -82,12 +82,10 @@ class FlightSearchViewController: UIViewController {
                                      ])
         
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     @objc func handelSearchButton(){
         
         let flightInformationList = FlightInformationList()
@@ -95,7 +93,6 @@ class FlightSearchViewController: UIViewController {
         let navigationController = UINavigationController(rootViewController: flightInformationList)
         present(navigationController, animated: true, completion: nil)
     }
-    
 }
 
 

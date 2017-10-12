@@ -15,16 +15,14 @@ class  FlightDisplayCell: UITableViewCell {
             guard let flightDataInfo = flightDataItem as? FlightDataInformation else {
                 return
             }
-            
             cellFlightIDLabel.text = flightDataInfo.FltId
             cellOriginLabel.text = flightDataInfo.Orig
             cellDestinationLabel.text = flightDataInfo.Dest
             cellScheduleArrivalTimeLabel.text = flightDataInfo.SchedArrTime
             cellEstimatedArrivalTimeLabel.text = flightDataInfo.EstArrTime
-            
         }
     }
-    
+    // CellLabel for table view
     let cellSerialNumberLabel = Utility.customLabel(lblTitle: "S/N")
     let cellFlightIDLabel = Utility.customLabel(lblTitle: "Flight ID")
     let cellOriginLabel  = Utility.customLabel(lblTitle: "Origin")
@@ -32,12 +30,8 @@ class  FlightDisplayCell: UITableViewCell {
     let cellScheduleArrivalTimeLabel  = Utility.customLabel(lblTitle: "Sched Arrival Time")
     let cellEstimatedArrivalTimeLabel  = Utility.customLabel(lblTitle:"Est Arrival Time")
     
-    let cellSerialNumberView : UIView = {
-        let view = UIView()
-        view.backgroundColor = .gray
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
+    // Cell for stack view
+    let cellSerialNumberView = UIView()
     let cellFlightIDView = UIView()
     let cellOriginView = UIView()
     let cellDestinationView = UIView()
@@ -53,7 +47,6 @@ class  FlightDisplayCell: UITableViewCell {
         displayInformationLabelStackViewForCell.translatesAutoresizingMaskIntoConstraints = false
         
         // add sub view to table cell
-        
         addSubview(displayInformationLabelStackViewForCell)
         addSubview(cellSerialNumberLabel)
         addSubview(cellFlightIDLabel)
@@ -62,12 +55,10 @@ class  FlightDisplayCell: UITableViewCell {
         addSubview(cellScheduleArrivalTimeLabel)
         addSubview(cellEstimatedArrivalTimeLabel)
         
-        
         // layout for Stack View
         NSLayoutConstraint.activate([displayInformationLabelStackViewForCell.leadingAnchor.constraint(equalTo: self.leadingAnchor), displayInformationLabelStackViewForCell.topAnchor.constraint(equalTo: self.topAnchor),displayInformationLabelStackViewForCell.widthAnchor.constraint(equalTo :self.widthAnchor), displayInformationLabelStackViewForCell.heightAnchor.constraint(equalTo : self.heightAnchor)])
         
         anchorlayoutViewForCell()
-        
     }
     
     func anchorlayoutViewForCell()  {
@@ -80,10 +71,7 @@ class  FlightDisplayCell: UITableViewCell {
         Utility.anchorForLayout(textLabel: cellEstimatedArrivalTimeLabel, textLabelView: cellEstimatedArrivalTime)
         
     }
-    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    
 }
