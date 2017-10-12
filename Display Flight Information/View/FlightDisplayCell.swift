@@ -10,12 +10,12 @@ import UIKit
 
 class  FlightDisplayCell: UITableViewCell {
     
-     var flightDataItem: Any? {
+    var flightDataItem: Any? {
         didSet {
             guard let flightDataInfo = flightDataItem as? FlightDataInformation else {
                 return
             }
-
+            
             cellFlightIDLabel.text = flightDataInfo.FltId
             cellOriginLabel.text = flightDataInfo.Orig
             cellDestinationLabel.text = flightDataInfo.Dest
@@ -64,7 +64,7 @@ class  FlightDisplayCell: UITableViewCell {
         
         
         // layout for Stack View
-    NSLayoutConstraint.activate([displayInformationLabelStackViewForCell.leadingAnchor.constraint(equalTo: self.leadingAnchor), displayInformationLabelStackViewForCell.topAnchor.constraint(equalTo: self.topAnchor),displayInformationLabelStackViewForCell.widthAnchor.constraint(equalTo :self.widthAnchor), displayInformationLabelStackViewForCell.heightAnchor.constraint(equalTo : self.heightAnchor)])
+        NSLayoutConstraint.activate([displayInformationLabelStackViewForCell.leadingAnchor.constraint(equalTo: self.leadingAnchor), displayInformationLabelStackViewForCell.topAnchor.constraint(equalTo: self.topAnchor),displayInformationLabelStackViewForCell.widthAnchor.constraint(equalTo :self.widthAnchor), displayInformationLabelStackViewForCell.heightAnchor.constraint(equalTo : self.heightAnchor)])
         
         anchorlayoutViewForCell()
         

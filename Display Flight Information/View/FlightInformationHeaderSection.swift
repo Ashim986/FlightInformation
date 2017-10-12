@@ -18,43 +18,43 @@ extension FlightInformationList{
         let destinationLabel : UILabel = Utility.customHeaderLabel(lblTitle: "Destination")
         let scheduleArrivalTimeLabel : UILabel = Utility.customHeaderLabel(lblTitle: "Sched Arrival Time")
         let estimatedArrivalTimeLabel : UILabel = Utility.customHeaderLabel(lblTitle:"Est Arrival Time")
-   
-
-  
-    let serialNumberView = UIView()
-    let flightIDView = UIView()
-    let originView = UIView()
-    let destinationView = UIView()
-    let scheduleArrivalTimeView = UIView()
-    let estimatedArrivalTime = UIView()
-    
-    let displayInformationLabelStackView = UIStackView(arrangedSubviews: [serialNumberView, flightIDView, originView, destinationView,scheduleArrivalTimeView, estimatedArrivalTime])
-    displayInformationLabelStackView.axis = .horizontal
-    displayInformationLabelStackView.distribution = .fillEqually
-    displayInformationLabelStackView.translatesAutoresizingMaskIntoConstraints = false
-    
-    
-    view.addSubview(serialNumberLabel)
-    view.addSubview(flightIDLabel)
-    view.addSubview(originLabel)
-    view.addSubview(destinationLabel)
-    view.addSubview(scheduleArrivalTimeLabel)
-    view.addSubview(estimatedArrivalTimeLabel)
-    view.addSubview(displayInformationLabelStackView)
-    // Anchor For Stack Views and Label
-    // x,y, height and width
-    NSLayoutConstraint.activate([displayInformationLabelStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0), displayInformationLabelStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),displayInformationLabelStackView.widthAnchor.constraint(equalTo :view.widthAnchor), displayInformationLabelStackView.heightAnchor.constraint(equalToConstant: 30)])
-    
-    
-    // label Anchor
-    
+        
+        
+        
+        let serialNumberView = UIView()
+        let flightIDView = UIView()
+        let originView = UIView()
+        let destinationView = UIView()
+        let scheduleArrivalTimeView = UIView()
+        let estimatedArrivalTime = UIView()
+        
+        let displayInformationLabelStackView = UIStackView(arrangedSubviews: [serialNumberView, flightIDView, originView, destinationView,scheduleArrivalTimeView, estimatedArrivalTime])
+        displayInformationLabelStackView.axis = .horizontal
+        displayInformationLabelStackView.distribution = .fillEqually
+        displayInformationLabelStackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        view.addSubview(serialNumberLabel)
+        view.addSubview(flightIDLabel)
+        view.addSubview(originLabel)
+        view.addSubview(destinationLabel)
+        view.addSubview(scheduleArrivalTimeLabel)
+        view.addSubview(estimatedArrivalTimeLabel)
+        view.addSubview(displayInformationLabelStackView)
+        // Anchor For Stack Views and Label
+        // x,y, height and width
+        NSLayoutConstraint.activate([displayInformationLabelStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0), displayInformationLabelStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),displayInformationLabelStackView.widthAnchor.constraint(equalTo :view.widthAnchor), displayInformationLabelStackView.heightAnchor.constraint(equalToConstant: 30)])
+        
+        
+        // label Anchor
+        
         Utility.anchorForLayout(textLabel: serialNumberLabel, textLabelView: serialNumberView)
         Utility.anchorForLayout(textLabel: flightIDLabel, textLabelView: flightIDView)
         Utility.anchorForLayout(textLabel: originLabel, textLabelView: originView)
         Utility.anchorForLayout(textLabel: destinationLabel, textLabelView: destinationView)
         Utility.anchorForLayout(textLabel: scheduleArrivalTimeLabel, textLabelView: scheduleArrivalTimeView)
         Utility.anchorForLayout(textLabel: estimatedArrivalTimeLabel, textLabelView: estimatedArrivalTime)
-    
-    return displayInformationLabelStackView 
+        
+        return displayInformationLabelStackView 
     }
 }

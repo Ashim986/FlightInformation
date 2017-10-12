@@ -9,7 +9,7 @@
 import UIKit
 
 class Utility: NSObject {
-    
+//     label for table view cell
     class func customLabel(lblTitle : String) -> UILabel{
         let label =  UILabel()
         label.text = lblTitle
@@ -25,7 +25,7 @@ class Utility: NSObject {
         return label
     }
     
-    
+//    uilabel for table view header
     class func customHeaderLabel(lblTitle : String) -> UILabel{
         let label =  UILabel()
         label.text = lblTitle
@@ -41,48 +41,48 @@ class Utility: NSObject {
         return label
     }
     
+//    anchor for table view cell and label
     class func anchorForLayout(textLabel : UILabel , textLabelView : UIView){
         
         NSLayoutConstraint.activate([textLabel.leadingAnchor.constraint(equalTo: textLabelView.leadingAnchor), textLabel.trailingAnchor.constraint(equalTo: textLabelView.trailingAnchor),textLabel.widthAnchor.constraint(equalTo :textLabelView.widthAnchor), textLabel.heightAnchor.constraint(equalTo: textLabelView.heightAnchor)])
         
     }
+//    calculate Date and convert to standard format and send time less than 10 min ago
     
-    
-    class func formatDate(dateValue :String, destinationOffset : String , originOffset: String, currentTime : Date)-> String?{
-        var evaluatedDate = dateValue
-        let currentTime = currentTime
+    class func formatDate(dateValue :String?, destinationOffset : String?, originOffset : String?)-> String?{
+        let currentTime = Date()
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss "
         let calendar = Calendar.current
-        
-        if let previousDateFormated : Date = dateFormatter.date(from: evaluatedDate)
-        {
-            var hour = calendar.component(.hour, from: previousDateFormated)
-            hour = hour - Int(destinationOffset)! + Int(originOffset)!
-            let minute = calendar.component(.minute, from: previousDateFormated)
-         
-            let difference =   previousDateFormated.timeIntervalSince(currentTime) / (60)
-            if difference > -10 {
-                if hour >= 12 && minute >= 0 {
-                    if hour == 12 {
-                        evaluatedDate = "\(hour):\(minute) PM"
-                        return evaluatedDate
-                    }else{
-                        evaluatedDate = "\(hour - 12):\(minute) PM"
-                        return evaluatedDate
-                    }
-                    
-                }else {
-                    evaluatedDate = "\(hour):\(minute) AM"
-                    return evaluatedDate
-                }
-            }
-            return nil
-            }
-        else{
+     
+        guard let UTCDestination = destinationOffset , let UTCOrigin = originOffset  else {
             return nil
         }
+        let UTCTimeDifference = Int(UTCDestination)! - Int(UTCOrigin)!
+        dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss"
+        let evaluatedDate : Date? = dateFormatter.date(from: dateValue!)
+        let differenceInMin = (evaluatedDate?.timeIntervalSince(currentTime))! / 60
+        if differenceInMin > -10 {
+            let dateWithOffsetValue = calendar.date(byAdding: .hour, value: UTCTimeDifference, to: evaluatedDate!)
+            let dateFormatter2 = dateFormatter
+            dateFormatter2.dateFormat = "hh:mm a"
+            let dateValue = dateFormatter.string(from: dateWithOffsetValue!)
+            return String(describing : dateValue)
+        }
+        else{
             
+            return nil
+        }
+    }
+    
+    class func sortArrayOfStruct(flightDataArray : [FlightDataInformation])->[FlightDataInformation]{
+        
+        let unorderedData = flightDataArray[0]
+        let orderedData = flightDataArray.sorted {_,_ in
+            let s1 = unorderedData.SchedArrTime
+            let s2 = unorderedData.SchedArrTime
+            return s1 > s2
+        }
+        return orderedData
     }
     
 }

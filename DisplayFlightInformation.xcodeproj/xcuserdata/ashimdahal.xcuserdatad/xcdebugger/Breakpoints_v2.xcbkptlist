@@ -9,29 +9,29 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Display Flight Information/Supporting File/Utility.swift"
-            timestampString = "529433160.731924"
+            filePath = "Display Flight Information/Controller/FlightInformationList.swift"
+            timestampString = "529491369.049459"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "formatDate(dateValue:destinationOffset:originOffset:currentTime:)"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Display Flight Information/Supporting File/Utility.swift"
-            timestampString = "529433160.733197"
+            timestampString = "529491369.049899"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "formatDate(dateValue:destinationOffset:originOffset:currentTime:)"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "formatDate(dateValue:destinationOffset:originOffset:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

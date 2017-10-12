@@ -9,9 +9,9 @@
 import UIKit
 
 class FlightSearchViewController: UIViewController {
-
+    
     let informationLabel : UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.text = "Please enter three digit airport code to find information about flight detail"
         label.font = UIFont.systemFont(ofSize: 16)
         label.textAlignment = .center
@@ -56,7 +56,7 @@ class FlightSearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-
+        
         view.addSubview(informationLabel)
         view.addSubview(textFieldForAirportCode)
         view.addSubview(searchButton)
@@ -65,9 +65,6 @@ class FlightSearchViewController: UIViewController {
     
     func anchroForView()  {
         // x, y , Height , Width Anchor
-     
-        
-      
         NSLayoutConstraint.activate([informationLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
                                      informationLabel.centerYAnchor.constraint(equalTo: view.topAnchor, constant : 100),
                                      informationLabel.widthAnchor.constraint(equalTo : view.widthAnchor , constant : -20),
@@ -92,9 +89,11 @@ class FlightSearchViewController: UIViewController {
     }
     
     @objc func handelSearchButton(){
-    
-            let flightInformationList = UINavigationController(rootViewController: FlightInformationList())
-            present(flightInformationList, animated: true, completion: nil)
+        
+        let flightInformationList = FlightInformationList()
+        flightInformationList.searchKey = textFieldForAirportCode.text!
+        let navigationController = UINavigationController(rootViewController: flightInformationList)
+        present(navigationController, animated: true, completion: nil)
     }
     
 }
