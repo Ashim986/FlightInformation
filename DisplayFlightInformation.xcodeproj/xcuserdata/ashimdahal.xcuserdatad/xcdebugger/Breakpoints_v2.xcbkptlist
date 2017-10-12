@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Display Flight Information/Supporting File/Utility.swift"
-            timestampString = "529529227.306206"
+            timestampString = "529529932.554166"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Display Flight Information/Supporting File/Utility.swift"
-            timestampString = "529529227.306274"
+            timestampString = "529529932.554992"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"
@@ -90,7 +90,7 @@
                   moduleName = "DisplayFlightInformation"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ashimdahal/Desktop/ForcastFlightForAlaskaAirline/Display%20Flight%20Information/Controller/FlightInformationList.swift"
-                  timestampString = "529527906.293034"
+                  timestampString = "529529932.742039"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "29"
@@ -105,7 +105,7 @@
                   moduleName = "DisplayFlightInformation"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ashimdahal/Desktop/ForcastFlightForAlaskaAirline/Display%20Flight%20Information/Controller/FlightInformationList.swift"
-                  timestampString = "529527906.296038"
+                  timestampString = "529529932.744935"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "29"
@@ -138,12 +138,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Display Flight Information/Supporting File/Utility.swift"
-            timestampString = "529529227.306454"
+            timestampString = "529529932.555644"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
             endingLineNumber = "54"
             landmarkName = "formatDateForScheduleArrivalTime(scheduleArrivalTime:destinationOffset:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DisplayFlightInformationUITests/DisplayFlightInformationUITests.swift"
+            timestampString = "529529748.365667"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "testExample()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

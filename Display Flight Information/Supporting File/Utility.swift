@@ -59,7 +59,7 @@ class Utility: NSObject {
         let evaluatedDate : Date? = dateFormatter.date(from: scheduleArrivalTime!)
         let dateWithOffsetValue = calendar.date(byAdding: .hour, value: UTCTimeDifference, to: evaluatedDate!)
         let differenceInMin = (dateWithOffsetValue?.timeIntervalSince(currentTime))! / 60
-        if differenceInMin > -10 {
+        if differenceInMin > -10 && differenceInMin < 60 {
             let dateFormatter2 = dateFormatter
             dateFormatter2.dateFormat = "hh:mm a"
             let dateValue = dateFormatter.string(from: dateWithOffsetValue!)
