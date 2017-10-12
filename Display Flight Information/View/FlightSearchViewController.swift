@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FlightSearchViewController: UIViewController {
+class FlightSearchViewController: UIViewController, UITextFieldDelegate {
     
     let informationLabel : UILabel = {
         let label = UILabel()
@@ -61,8 +61,35 @@ class FlightSearchViewController: UIViewController {
         view.addSubview(textFieldForAirportCode)
         view.addSubview(searchButton)
         anchroForView()
+        textFieldForAirportCode.delegate = self
+        
+    }
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if textField.text != nil
+        {
+            textField.text = nil
+        }
+        
     }
     
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        if textField.text!.characters.count < 3 {
+                let allowedCharacter = CharacterSet.letters
+            let characterSet = CharacterSet(charactersIn : string)
+            if   allowedCharacter.isSuperset(of: characterSet){
+            return true
+            }
+        }
+        textField.clearButtonMode = .always
+        return false
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+  
     func anchroForView()  {
         // x, y , Height , Width Anchor
         NSLayoutConstraint.activate([informationLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -93,6 +120,8 @@ class FlightSearchViewController: UIViewController {
         let navigationController = UINavigationController(rootViewController: flightInformationList)
         present(navigationController, animated: true, completion: nil)
     }
+    
+    
 }
 
 
