@@ -32,11 +32,10 @@ class FlightInformationList: UITableViewController {
                 return
             }
             if let flightDataInfo = flightDataInformation {
-                let estimatedArrivalTime = Utility.formatDate(dateValue:flightDataInfo.EstArrTime, destinationOffset:flightDataInfo.DestZuluOffset)
                 
-                let scheduleArrivalTime = Utility.formatDate(dateValue:flightDataInfo.SchedArrTime, destinationOffset:flightDataInfo.DestZuluOffset)
+                let scheduleArrivalTime = Utility.formatDateForScheduleArrivalTime(scheduleArrivalTime:flightDataInfo.SchedArrTime, destinationOffset:flightDataInfo.DestZuluOffset)
                 
-                if (estimatedArrivalTime != nil) && (scheduleArrivalTime != nil)
+                if (scheduleArrivalTime != nil)
                 {
                   self.flightDisplay.append(flightDataInfo)
                 }
@@ -59,8 +58,8 @@ class FlightInformationList: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as? FlightDisplayCell
         
         let flightData = flightDisplay[indexPath.row]
-        let estimatedArrivalTime = Utility.formatDate(dateValue:flightData.EstArrTime, destinationOffset:flightData.DestZuluOffset)
-        let scheduleArrivalTime = Utility.formatDate(dateValue:flightData.SchedArrTime, destinationOffset:flightData.DestZuluOffset)
+        let estimatedArrivalTime = Utility.formatDateForEstimateArrivalTime(estimateArrivalTime:flightData.EstArrTime, destinationOffset:flightData.DestZuluOffset)
+        let scheduleArrivalTime = Utility.formatDateForScheduleArrivalTime(scheduleArrivalTime:flightData.SchedArrTime, destinationOffset:flightData.DestZuluOffset)
         
         cell?.cellSerialNumberLabel.text = "\(indexPath.row + 1)"
         cell?.cellFlightIDLabel.text = flightData.FltId
