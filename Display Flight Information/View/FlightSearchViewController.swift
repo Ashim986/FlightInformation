@@ -67,14 +67,15 @@ class FlightSearchViewController: UIViewController, UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if textField.text != nil
         {
+            textFieldForAirportCode.text = textField.text
+        }else{
             textField.text = nil
         }
-        
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
-        if textField.text!.characters.count < 3 {
+        if textField.text!.characters.count < 4 {
                 let allowedCharacter = CharacterSet.letters
             let characterSet = CharacterSet(charactersIn : string)
             if   allowedCharacter.isSuperset(of: characterSet){
