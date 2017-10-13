@@ -11,9 +11,9 @@ import UIKit
 class FlightInformationList: UITableViewController {
     
     let cellID = "cellID"
-    var searchKey = ""
+    var searchKey = "" 
     var flightDisplay = [FlightDataInformation]()
-    var scheduleList = [String]()
+    var estimatedList = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +29,10 @@ class FlightInformationList: UITableViewController {
         
         let flightSearchViewController = FlightSearchViewController()
         flightSearchViewController.textFieldForAirportCode.text = searchKey
+        
         UserDefaults.standard.set(false, forKey: "isInPresentViewController")
         UserDefaults.standard.synchronize()
+      
     }
     func fetchFlightData(){
         
@@ -42,11 +44,11 @@ class FlightInformationList: UITableViewController {
             }
             if let flightDataInfo = flightDataInformation {
                 
-                let scheduleArrivalTime = Utility.formatDateForScheduleArrivalTime(scheduleArrivalTime:flightDataInfo.SchedArrTime, destinationOffset:flightDataInfo.DestZuluOffset)
+                let estimatedArrivalTime = Utility.formatDateForEstimatedArrivalTime(scheduleArrivalTime:flightDataInfo.EstArrTime, destinationOffset:flightDataInfo.DestZuluOffset)
                 
-                if (scheduleArrivalTime != nil)
+                if (estimatedArrivalTime != nil)
                 {
-                    self.scheduleList.append(scheduleArrivalTime!)
+                    self.estimatedList.append(estimatedArrivalTime!)
                   self.flightDisplay.append(flightDataInfo)
                 }
                 DispatchQueue.main.async {
@@ -72,8 +74,8 @@ class FlightInformationList: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as? FlightDisplayCell
         
         let flightData = flightDisplay[indexPath.row]
-        let estimatedArrivalTime = Utility.formatDateForEstimateArrivalTime(estimateArrivalTime:flightData.EstArrTime, destinationOffset:flightData.DestZuluOffset)
-        let scheduleArrivalTime = scheduleList.sorted()[indexPath.row]
+        let scheduleArrivalTime = Utility.formatDateForScheduleArrivalTime(estimateArrivalTime:flightData.SchedArrTime, destinationOffset:flightData.DestZuluOffset)
+        let estimatedArrivalTime = estimatedList.sorted()[indexPath.row]
         
         cell?.cellSerialNumberLabel.text = "\(indexPath.row + 1)"
         cell?.cellFlightIDLabel.text = flightData.FltId

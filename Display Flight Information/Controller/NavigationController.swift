@@ -30,11 +30,22 @@ class NavigationController : UINavigationController {
     }
     
    @objc func showFlightSearchViewController()  {
+
+    
         let flightSearchViewController = FlightSearchViewController()
-        present(flightSearchViewController, animated: true, completion: nil)
+    flightSearchViewController.textFieldForAirportCode.text =  UserDefaults.standard.value(forKey: "searchKey") as? String
+    
+    present(flightSearchViewController, animated: true, completion: nil)
     }
     @objc func showFlightInformationList(){
-        let navigationController = UINavigationController(rootViewController: FlightInformationList())
+        
+        let flightInformationList = FlightInformationList()
+        if !isInPresentViewController() {
+            
+           flightInformationList.searchKey = UserDefaults.standard.value(forKey: "searchKey") as! String
+        }
+    
+        let navigationController = UINavigationController(rootViewController: flightInformationList)
         
         present(navigationController, animated: true, completion: nil)
     }

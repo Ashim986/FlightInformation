@@ -10,6 +10,7 @@ import UIKit
 
 class FlightSearchViewController: UIViewController, UITextFieldDelegate {
     
+    
     let informationLabel : UILabel = {
         let label = UILabel()
         label.text = "Please enter three digit airport code to find information about flight detail"
@@ -33,6 +34,7 @@ class FlightSearchViewController: UIViewController, UITextFieldDelegate {
         textField.layer.borderColor = UIColor.lightGray.cgColor
         textField.layer.borderWidth = 1
         textField.layer.cornerRadius = 5
+        textField.autocapitalizationType = .allCharacters
         textField.layer.masksToBounds = true
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
@@ -69,17 +71,11 @@ class FlightSearchViewController: UIViewController, UITextFieldDelegate {
         let flightInformationList = FlightInformationList()
         flightInformationList.searchKey = textFieldForAirportCode.text!
         UserDefaults.standard.set(true, forKey: "isInPresentViewController")
+        UserDefaults.standard.setValue(textFieldForAirportCode.text!, forKey: "searchKey")
         UserDefaults.standard.synchronize()
     }
     
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        if textField.text != nil
-        {
-            textFieldForAirportCode.text = textField.text
-        }else{
-            textField.text = nil
-        }
-    }
+   
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         

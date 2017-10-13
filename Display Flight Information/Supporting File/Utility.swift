@@ -46,7 +46,7 @@ class Utility: NSObject {
         
     }
 //    calculate Date and convert to standard format and send time less than 10 min ago
-    class func formatDateForScheduleArrivalTime(scheduleArrivalTime :String?, destinationOffset : String?)-> String?{
+    class func formatDateForEstimatedArrivalTime(scheduleArrivalTime :String?, destinationOffset : String?)-> String?{
         let currentTime = Date()
         let dateFormatter = DateFormatter()
         let calendar = Calendar.current
@@ -73,7 +73,7 @@ class Utility: NSObject {
         }
     }
     
-    class func formatDateForEstimateArrivalTime(estimateArrivalTime :String?, destinationOffset : String?)-> String?{
+    class func formatDateForScheduleArrivalTime(estimateArrivalTime :String?, destinationOffset : String?)-> String?{
         let dateFormatter = DateFormatter()
         let calendar = Calendar.current
         guard let UTCDestination = destinationOffset else {

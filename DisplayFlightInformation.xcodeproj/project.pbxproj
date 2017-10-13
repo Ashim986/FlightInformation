@@ -82,6 +82,7 @@
 		C56DCC311F8C7F690089BA97 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C513ED081F904DDB009ECE2C /* NavigationController.swift */,
 				C56DCC361F8C7FCE0089BA97 /* FlightInformationList.swift */,
 			);
 			path = Controller;
@@ -91,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				C56DCC341F8C7FA40089BA97 /* FlightDisplayCell.swift */,
-				C513ED081F904DDB009ECE2C /* NavigationController.swift */,
 				C59090521F8C3C4B00C2CDD8 /* FlightSearchViewController.swift */,
 				C56DCC3A1F8D42B90089BA97 /* FlightInformationHeaderSection.swift */,
 			);
