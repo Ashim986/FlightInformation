@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C513ED021F8FFB7C009ECE2C /* DisplayFlightInformationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C594DDF11F8EABF7003974F9 /* DisplayFlightInformationUITests.swift */; };
 		C56DCC2F1F8C703C0089BA97 /* FlightDataInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56DCC2E1F8C703C0089BA97 /* FlightDataInformation.swift */; };
 		C56DCC351F8C7FA40089BA97 /* FlightDisplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56DCC341F8C7FA40089BA97 /* FlightDisplayCell.swift */; };
 		C56DCC371F8C7FCE0089BA97 /* FlightInformationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56DCC361F8C7FCE0089BA97 /* FlightInformationList.swift */; };
@@ -276,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C513ED021F8FFB7C009ECE2C /* DisplayFlightInformationUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

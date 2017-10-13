@@ -7,6 +7,11 @@
 		<key>DisplayFlightInformation.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>DisplayFlightInformationUITests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
 		<key>ForcastFlightForAlaskaAirline.xcscheme</key>
@@ -28,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>C590906E1F8C3C4B00C2CDD8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C594DDEE1F8EABF7003974F9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

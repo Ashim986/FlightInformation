@@ -13,6 +13,7 @@ class FlightInformationList: UITableViewController {
     let cellID = "cellID"
     var searchKey = ""
     var flightDisplay = [FlightDataInformation]()
+    var scheduleList = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,7 @@ class FlightInformationList: UITableViewController {
                 
                 if (scheduleArrivalTime != nil)
                 {
+                    self.scheduleList.append(scheduleArrivalTime!)
                   self.flightDisplay.append(flightDataInfo)
                 }
                 DispatchQueue.main.async {
@@ -59,7 +61,7 @@ class FlightInformationList: UITableViewController {
         
         let flightData = flightDisplay[indexPath.row]
         let estimatedArrivalTime = Utility.formatDateForEstimateArrivalTime(estimateArrivalTime:flightData.EstArrTime, destinationOffset:flightData.DestZuluOffset)
-        let scheduleArrivalTime = Utility.formatDateForScheduleArrivalTime(scheduleArrivalTime:flightData.SchedArrTime, destinationOffset:flightData.DestZuluOffset)
+        let scheduleArrivalTime = scheduleList.sorted()[indexPath.row]
         
         cell?.cellSerialNumberLabel.text = "\(indexPath.row + 1)"
         cell?.cellFlightIDLabel.text = flightData.FltId
