@@ -64,6 +64,14 @@ class FlightSearchViewController: UIViewController, UITextFieldDelegate {
         textFieldForAirportCode.delegate = self
         
     }
+    override func viewDidAppear(_ animated: Bool) {
+        
+        let flightInformationList = FlightInformationList()
+        flightInformationList.searchKey = textFieldForAirportCode.text!
+        UserDefaults.standard.set(true, forKey: "isInPresentViewController")
+        UserDefaults.standard.synchronize()
+    }
+    
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if textField.text != nil
         {

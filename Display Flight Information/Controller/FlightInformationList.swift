@@ -17,12 +17,20 @@ class FlightInformationList: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(handleBackButton))
         navigationItem.title = "Flight Information Detail"
         tableView.register(FlightDisplayCell.self, forCellReuseIdentifier: cellID)
         tableView.reloadData()
         fetchFlightData()
 
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        
+        let flightSearchViewController = FlightSearchViewController()
+        flightSearchViewController.textFieldForAirportCode.text = searchKey
+        UserDefaults.standard.set(false, forKey: "isInPresentViewController")
+        UserDefaults.standard.synchronize()
     }
     func fetchFlightData(){
         
@@ -48,7 +56,11 @@ class FlightInformationList: UITableViewController {
         }
     }
     @objc func handleBackButton(){
-        dismiss(animated: true, completion: nil)
+        
+        let flightSearchViewController = FlightSearchViewController()
+        flightSearchViewController.textFieldForAirportCode.text = searchKey
+        
+        present(flightSearchViewController, animated: true, completion: nil)
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return flightDisplay.count

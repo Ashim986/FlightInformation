@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C513ED091F904DDB009ECE2C /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C513ED081F904DDB009ECE2C /* NavigationController.swift */; };
 		C56DCC2F1F8C703C0089BA97 /* FlightDataInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56DCC2E1F8C703C0089BA97 /* FlightDataInformation.swift */; };
 		C56DCC351F8C7FA40089BA97 /* FlightDisplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56DCC341F8C7FA40089BA97 /* FlightDisplayCell.swift */; };
 		C56DCC371F8C7FCE0089BA97 /* FlightInformationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56DCC361F8C7FCE0089BA97 /* FlightInformationList.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C513ED081F904DDB009ECE2C /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		C56DCC2E1F8C703C0089BA97 /* FlightDataInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDataInformation.swift; sourceTree = "<group>"; };
 		C56DCC341F8C7FA40089BA97 /* FlightDisplayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDisplayCell.swift; sourceTree = "<group>"; };
 		C56DCC361F8C7FCE0089BA97 /* FlightInformationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInformationList.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				C56DCC341F8C7FA40089BA97 /* FlightDisplayCell.swift */,
+				C513ED081F904DDB009ECE2C /* NavigationController.swift */,
 				C59090521F8C3C4B00C2CDD8 /* FlightSearchViewController.swift */,
 				C56DCC3A1F8D42B90089BA97 /* FlightInformationHeaderSection.swift */,
 			);
@@ -266,6 +269,7 @@
 				C56DCC411F8D8A5D0089BA97 /* Utility.swift in Sources */,
 				C5A045DA1F8DDAD100D2BB0F /* Service.swift in Sources */,
 				C59090511F8C3C4B00C2CDD8 /* AppDelegate.swift in Sources */,
+				C513ED091F904DDB009ECE2C /* NavigationController.swift in Sources */,
 				C56DCC2F1F8C703C0089BA97 /* FlightDataInformation.swift in Sources */,
 				C56DCC3B1F8D42B90089BA97 /* FlightInformationHeaderSection.swift in Sources */,
 			);
