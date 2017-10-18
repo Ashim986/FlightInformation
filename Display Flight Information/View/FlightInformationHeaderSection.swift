@@ -9,9 +9,7 @@
 import UIKit
 
 extension FlightInformationList{
-    
-    
-    
+
     func displayHeaderList () -> UIView{
         
         let serialNumberLabel = Utility.customHeaderLabel(lblTitle: "S/N")
@@ -26,7 +24,7 @@ extension FlightInformationList{
         let scheduleArrivalTimeView = UIView()
         let estimatedArrivalTime = UIView()
         
-        let displayInformationLabelStackView = UIStackView(arrangedSubviews: [serialNumberView, flightIDView, originView,scheduleArrivalTimeView, estimatedArrivalTime])
+        let displayInformationLabelStackView = UIStackView(arrangedSubviews: [serialNumberView, flightIDView, originView, estimatedArrivalTime,scheduleArrivalTimeView])
         displayInformationLabelStackView.axis = .horizontal
         displayInformationLabelStackView.distribution = .fillEqually
         displayInformationLabelStackView.translatesAutoresizingMaskIntoConstraints = false

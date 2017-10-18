@@ -14,7 +14,6 @@ struct Service  {
     static let sharedInstance = Service()
     
     func fetchHomeFeed(searchObject : String ,completion: @escaping (FlightDataInformation?,Error?)->()) {
-        
         // Base URL
         guard let url = URL(string: "https://api.qa.alaskaair.com/1/airports/\(searchObject)/flights/flightInfo?city=\(searchObject)&minutesBehind=10&minutesAhead=120") else {return }
         var request = URLRequest(url: url)

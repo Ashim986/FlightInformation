@@ -14,5 +14,4 @@ class FlightDataInformation : Decodable {
     var SchedArrTime : String
     var EstArrTime : String
     var DestZuluOffset : String
-    
 }

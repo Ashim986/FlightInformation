@@ -227,13 +227,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Display Flight Information/Controller/NavigationController.swift"
-            timestampString = "529608951.824247"
+            timestampString = "529708333.594985"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "showFlightInformationList()"
-            landmarkType = "7">
+            endingLineNumber = "43">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -38,7 +38,7 @@ class  FlightDisplayCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: .default , reuseIdentifier: reuseIdentifier)
         
-        let displayInformationLabelStackViewForCell = UIStackView(arrangedSubviews: [cellSerialNumberView, cellFlightIDView, cellOriginView,cellScheduleArrivalTimeView, cellEstimatedArrivalTime])
+        let displayInformationLabelStackViewForCell = UIStackView(arrangedSubviews: [cellSerialNumberView, cellFlightIDView, cellOriginView,cellEstimatedArrivalTime,cellScheduleArrivalTimeView])
         displayInformationLabelStackViewForCell.axis = .horizontal
         displayInformationLabelStackViewForCell.distribution = .fillEqually
         displayInformationLabelStackViewForCell.translatesAutoresizingMaskIntoConstraints = false
@@ -53,11 +53,10 @@ class  FlightDisplayCell: UITableViewCell {
         
         // layout for Stack View
         NSLayoutConstraint.activate([displayInformationLabelStackViewForCell.leadingAnchor.constraint(equalTo: self.leadingAnchor), displayInformationLabelStackViewForCell.topAnchor.constraint(equalTo: self.topAnchor),displayInformationLabelStackViewForCell.widthAnchor.constraint(equalTo :self.widthAnchor), displayInformationLabelStackViewForCell.heightAnchor.constraint(equalTo : self.heightAnchor)])
-        
         anchorlayoutViewForCell()
     }
     
-    func anchorlayoutViewForCell()  {
+    func anchorlayoutViewForCell(){
         
         Utility.anchorForLayout(textLabel: cellSerialNumberLabel, textLabelView: cellSerialNumberView)
         Utility.anchorForLayout(textLabel: cellFlightIDLabel, textLabelView: cellFlightIDView)

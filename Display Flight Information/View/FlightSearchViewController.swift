@@ -75,8 +75,6 @@ class FlightSearchViewController: UIViewController, UITextFieldDelegate {
         UserDefaults.standard.synchronize()
     }
     
-   
-    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         if textField.text!.characters.count < 4 {
@@ -94,7 +92,6 @@ class FlightSearchViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
-  
     func anchroForView()  {
         // x, y , Height , Width Anchor
         NSLayoutConstraint.activate([informationLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),

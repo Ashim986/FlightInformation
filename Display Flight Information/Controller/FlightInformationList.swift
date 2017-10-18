@@ -82,8 +82,20 @@ class FlightInformationList: UITableViewController {
         cell?.cellOriginLabel.text = flightData.Orig
         cell?.cellEstimatedArrivalTimeLabel.text = estimatedArrivalTime
         cell?.cellScheduleArrivalTimeLabel.text = scheduleArrivalTime
+        
+        cell?.cellSerialNumberLabel.backgroundColor = indexPath.row % 2 == 0 ? #colorLiteral(red: 0.5574740171, green: 0.5574740171, blue: 0.5574740171, alpha: 1) : #colorLiteral(red: 0.7511050701, green: 0.7511050701, blue: 0.7511050701, alpha: 1)
+        cell?.cellSerialNumberLabel.textColor = indexPath.row % 2 == 0 ? .white : .black
+        cell?.cellFlightIDLabel.backgroundColor = indexPath.row % 2 == 0 ? #colorLiteral(red: 0.5574740171, green: 0.5574740171, blue: 0.5574740171, alpha: 1) : #colorLiteral(red: 0.7511050701, green: 0.7511050701, blue: 0.7511050701, alpha: 1)
+        cell?.cellFlightIDLabel.textColor = indexPath.row % 2 == 0 ? .white : .black
+        cell?.cellOriginLabel.backgroundColor = indexPath.row % 2 == 0 ? #colorLiteral(red: 0.5574740171, green: 0.5574740171, blue: 0.5574740171, alpha: 1) : #colorLiteral(red: 0.7511050701, green: 0.7511050701, blue: 0.7511050701, alpha: 1)
+        cell?.cellOriginLabel.textColor = indexPath.row % 2 == 0 ? .white : .black
+        cell?.cellEstimatedArrivalTimeLabel.backgroundColor = indexPath.row % 2 == 0 ? #colorLiteral(red: 0.5574740171, green: 0.5574740171, blue: 0.5574740171, alpha: 1) : #colorLiteral(red: 0.7511050701, green: 0.7511050701, blue: 0.7511050701, alpha: 1)
+        cell?.cellEstimatedArrivalTimeLabel.textColor = indexPath.row % 2 == 0 ? .white : .black
+        cell?.cellScheduleArrivalTimeLabel.backgroundColor = indexPath.row % 2 == 0 ? #colorLiteral(red: 0.5574740171, green: 0.5574740171, blue: 0.5574740171, alpha: 1) : #colorLiteral(red: 0.7511050701, green: 0.7511050701, blue: 0.7511050701, alpha: 1)
+        cell?.cellScheduleArrivalTimeLabel.textColor = indexPath.row % 2 == 0 ? .white : .black
         return cell!
     }
+   
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = displayHeaderList()
         return headerView
