@@ -34,7 +34,7 @@ class NavigationController : UINavigationController {
         
         let flightInformationList = FlightInformationList()
         if !isInPresentViewController() {
-            flightInformationList.searchKey = UserDefaults.standard.value(forKey: "searchKey") as! String
+            flightInformationList.searchKey = UserDefaults.standard.value(forKey: "searchKey") as? String ?? ""
         }
         let navigationController = UINavigationController(rootViewController: flightInformationList)
         present(navigationController, animated: true, completion: nil)
